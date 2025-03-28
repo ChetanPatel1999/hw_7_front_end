@@ -1,0 +1,29 @@
+<!--form tag is used to form   -->
+ <!--get method :- 2 , 4 kb data pass client side to server side
+                        data transfer client side to server side fast
+                        data show in url
+             post method :- unlimited data pass client side to server side
+                        data transfer client side to server side slow
+                        data do not show in url                  
+        -->
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <h3 style="text-align: center;" >Registration Form ..</h3>
+     <form action="25_div_tag.html" method="get">
+        <table align="center">
+            <tr><th>name :</th><td><input type="text" name="uname" placeholder="enter your name" ></td></tr>
+            <tr><th>father name :</th><td><input type="text" name="fname" placeholder="enter father name" ></td></tr>
+            <tr><th>mobile :</th><td><input type="text" name="mob" ></td></tr>
+            <tr><th>password  :</th><td><input type="password" name="pass" ></td></tr>
+             <!--<tr><td></td><td><input type="button" value="click" onclick="alert('this form submit on server')" ></td></tr>-->
+             <!-- <tr><td></td><td><button onclick="alert('hello student')" >register </button> </td></tr> -->
+            <tr><th>Select Gender</th> <td>male<input type="radio" name="gender" value="male" > female <input type="radio" name="gender" value="female" ></td></tr>  
+            <tr><td></td><td><input  type="submit" value="register" > <input type="reset" value="clear" > </td></tr>
+            </table>
+     </form>
+      
+    </body>
+</html>
