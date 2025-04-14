@@ -1,0 +1,195 @@
+<!-- The position Property
+The position property specifies the type of positioning method used for an element.
+
+There are five different position values:
+
+static
+relative
+fixed
+absolute
+sticky -->
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* position: static;
+HTML elements are positioned static by default.
+
+Static positioned elements are not affected by the top, bottom, left, and right and z-index properties.
+
+An element with position: static; is not positioned in any special way; it is always positioned 
+according to the normal flow of the page: */
+
+
+    /* position: relative;
+An element with position: relative; is positioned relative to its normal position.
+
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it
+ to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap 
+ left by the element. */
+
+
+    /* position: fixed;
+An element with position: fixed; is positioned relative to the viewport, which means it always stays 
+in the same place even if the page is scrolled. The top, right, bottom, and left properties are used
+ to position the element.
+
+A fixed element does not leave a gap in the page where it would normally have been located.
+using this we can fixed our navbar on the top of screen. 
+*/
+
+
+    /* position: absolute;
+An element with position: absolute; is positioned relative to the nearest
+positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+However; if an absolute positioned element has no positioned ancestors, it uses the document 
+body, and moves along with page scrolling. */
+
+    /* position: sticky;
+An element with position: sticky; is positioned based on the user's scroll position.
+
+A sticky element toggles between relative and fixed, depending on the scroll position. It is 
+positioned relative until a given offset position is met in the viewport - then it "sticks" in 
+place (like position:fixed). */
+    /* 
+     z- index 
+  -->its decides the stack level of elememts
+  --> Overlapping elements with a larger z index cover those with a smaller one.
+  ---> on static position  z index not working.
+  z index : auto(0) 
+*/
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 2px solid black;
+        display: inline-block;
+    }
+
+    .myclass {
+        width: 500px;
+        height: 200px;
+        background-color: green;
+        border: 2px solid black;
+        display: inline-block;
+        position: fixed;
+        bottom: 0px;
+    }
+
+    #div1 {
+        position: static;
+        left: 200px;
+        top: 200px
+    }
+
+    #div2 {
+        position: relative;
+        right: 30px;
+        bottom: 30px
+    }
+
+    #div3 {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+    }
+
+    #div4 {
+        position: absolute;
+        top: 0px;
+        right: 200px;
+    }
+
+    #div5 {
+        position: sticky;
+        top: 0px;
+        left: 500px;
+    }
+</style>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis hic tempore excepturi minima ipsam inventore
+        nobis ut, totam culpa quidem architecto perferendis recusandae laboriosam modi nulla deleniti consequatur iste
+        quam ex perspiciatis doloribus nemo? Aperiam expedita tempore voluptate repellendus voluptas repellat, nobis
+        voluptates veritatis inventore architecto dignissimos totam esse autem minima distinctio ipsa! Itaque voluptas
+        soluta temporibus neque sed quod maxime nisi quasi voluptatum laborum ipsam atque perspiciatis labore nihil,
+        possimus qui magnam doloremque, id sequi, fuga ratione? A dolore vero quibusdam necessitatibus, dolores
+        exercitationem consequuntur obcaecati provident mollitia dolorem suscipit, architecto sit harum animi tempora,
+        possimus soluta consectetur asperiores. Quam error incidunt culpa, dolorem ducimus dolores similique numquam
+        libero eum veritatis laudantium beatae architecto nulla ipsum, suscipit cum ipsa neque accusamus perferendis
+        corrupti fugiat, itaque minima quo ipsam? Labore mollitia aliquam animi, aut eveniet nam nobis quidem porro
+        quasi nisi, libero cupiditate assumenda quisquam. Architecto odit nihil sint non amet vitae quibusdam in,
+        aperiam est, incidunt doloremque accusantium explicabo cupiditate quia ducimus reprehenderit. Excepturi iusto
+        nam tempore voluptate quis, error recusandae mollitia! Delectus vitae animi, perspiciatis omnis facilis esse
+        quod laudantium error quasi, exercitationem repellendus ea nam explicabo doloremque ab possimus quos quaerat
+        suscipit perferendis deserunt! Fugiat, harum cum?</p>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+    <div class="myclass">
+        <div id="div4">div4</div>
+    </div>
+    <div id="div5">div5</div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, non voluptas. Iusto, amet reiciendis commodi et
+        officia illo. Molestias tenetur, facere aliquam, cumque nam voluptatem nobis, excepturi ipsa quibusdam dolorem
+        omnis suscipit! Eum id ea corporis culpa numquam veniam, odit quae provident dolore expedita explicabo
+        similique! Dignissimos, laboriosam? Numquam, a nobis fugiat incidunt veritatis neque! Odio, repellat harum
+        voluptatum quibusdam placeat quo tenetur ipsa dolor sed error mollitia laudantium voluptates alias voluptatem
+        nihil enim quis exercitationem officiis repellendus est modi deserunt. Quae, fuga! Nemo veritatis laudantium
+        odio autem facere atque ratione perferendis numquam quae possimus nostrum quas, at, nihil in qui accusantium.
+        Expedita voluptate quas tenetur illum perspiciatis, iure beatae animi incidunt nesciunt consequatur velit a
+        delectus assumenda, architecto modi magnam, impedit et explicabo? Dolorem non tempora nemo assumenda recusandae.
+        Incidunt, magni. Officia adipisci rem quos a natus officiis distinctio asperiores error ea voluptatem dolore
+        labore praesentium magni consequuntur minima necessitatibus repellendus aperiam porro, nulla est dolorem
+        doloribus libero, voluptate non. Magnam voluptas dolor voluptatum repellendus unde obcaecati sequi commodi
+        architecto perferendis officia recusandae rem nulla, reiciendis tempora ut exercitationem hic sed explicabo
+        doloremque nostrum illum vel. Officiis, numquam molestias dolores ratione sunt incidunt tempore dolor odio quis,
+        sit modi?</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam eius tempore quae amet quidem, modi eveniet
+        nemo. Ducimus facilis harum deleniti similique debitis cumque voluptatum a omnis qui exercitationem culpa nemo
+        sint repellat nam cupiditate asperiores recusandae error labore pariatur rerum illum, repellendus earum modi?
+        Earum, delectus in. Incidunt error dolores laudantium exercitationem voluptatem nam ab voluptatibus ducimus cum
+        repellendus porro fuga sed, ratione corrupti odit repellat maxime repudiandae suscipit atque molestiae beatae
+        cupiditate eos? Praesentium quisquam mollitia assumenda accusamus, ipsam tempora fugit quidem? Atque, sapiente?
+        Distinctio, expedita sit enim, quis voluptatum autem minima quam voluptatem earum odio natus quia dolorum
+        corrupti similique. Maxime accusamus animi ex enim. Pariatur voluptatibus est quae! Perspiciatis voluptatem
+        voluptate doloremque repudiandae cum error vel! Voluptates facilis excepturi commodi quasi laudantium
+        praesentium atque voluptate similique optio facere. Deleniti iusto aliquam commodi totam quod, eaque officiis
+        inventore corrupti at tenetur quisquam fuga amet unde quaerat fugiat. Nam dolores autem pariatur placeat
+        accusantium, tempora repellendus nemo minima nisi repudiandae saepe, exercitationem atque iure? Nemo soluta
+        laboriosam pariatur libero. Modi, sequi. Tenetur mollitia quam minus animi totam debitis doloribus esse.
+        Voluptatem, nihil rerum assumenda veritatis corrupti ducimus odio pariatur eligendi neque repellendus aspernatur
+        enim! Repellat, illum sint.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus provident quam sunt, sint adipisci
+        iure error dicta dolorem dignissimos nobis inventore ipsa impedit ex est suscipit tenetur consequuntur quas
+        culpa saepe quis deserunt officiis? Debitis ea saepe provident in, unde nesciunt? Amet eius ut eveniet tempora?
+        Beatae minus maxime adipisci sint similique eos itaque iste laudantium soluta dicta quia illo nesciunt quo
+        distinctio labore, quas sequi voluptatem aspernatur autem cum unde? Repellat enim vel eaque aperiam facilis
+        voluptas ab, quo iure rerum ea necessitatibus dolore. Eaque dolore officia amet fugiat ducimus nam maxime
+        impedit facere, enim, nobis praesentium optio beatae nemo quia. Consequatur numquam eligendi ea id libero. Quos
+        vero optio voluptatem adipisci, sequi fugiat esse ex corrupti accusantium sint! Eius, qui sed sunt debitis
+        vitae, repellendus deleniti dolor dignissimos assumenda repellat veniam laborum ut modi? Ipsum accusamus quis
+        saepe ullam fuga delectus facere nostrum error nam dicta modi dolor nihil eligendi natus consequuntur laboriosam
+        eum temporibus voluptate, tempore amet! Unde, voluptates, aliquam laudantium facilis cupiditate perspiciatis
+        nihil, nemo corporis eius exercitationem architecto error repellendus tenetur! Autem omnis velit quidem laborum
+        voluptas commodi aliquam eligendi fugit. Enim ducimus voluptate, aut praesentium molestiae, iusto commodi
+        reiciendis dicta iure odio tempore?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatibus provident quam sunt, sint adipisci
+        iure error dicta dolorem dignissimos nobis inventore ipsa impedit ex est suscipit tenetur consequuntur quas
+        culpa saepe quis deserunt officiis? Debitis ea saepe provident in, unde nesciunt? Amet eius ut eveniet tempora?
+        Beatae minus maxime adipisci sint similique eos itaque iste laudantium soluta dicta quia illo nesciunt quo
+        distinctio labore, quas sequi voluptatem aspernatur autem cum unde? Repellat enim vel eaque aperiam facilis
+        voluptas ab, quo iure rerum ea necessitatibus dolore. Eaque dolore officia amet fugiat ducimus nam maxime
+        impedit facere, enim, nobis praesentium optio beatae nemo quia. Consequatur numquam eligendi ea id libero. Quos
+        vero optio voluptatem adipisci, sequi fugiat esse ex corrupti accusantium sint! Eius, qui sed sunt debitis
+        vitae, repellendus deleniti dolor dignissimos assumenda repellat veniam laborum ut modi? Ipsum accusamus quis
+        saepe ullam fuga delectus facere nostrum error nam dicta modi dolor nihil eligendi natus consequuntur laboriosam
+        eum temporibus voluptate, tempore amet! Unde, voluptates, aliquam laudantium facilis cupiditate perspiciatis
+        nihil, nemo corporis eius exercitationem architecto error repellendus tenetur! Autem omnis velit quidem laborum
+        voluptas commodi aliquam eligendi fugit. Enim ducimus voluptate, aut praesentium molestiae, iusto commodi
+        reiciendis dicta iure odio tempore?</p>
+</body>
+
+</html>
