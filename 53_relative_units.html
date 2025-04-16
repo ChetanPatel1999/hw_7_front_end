@@ -1,0 +1,48 @@
+<!-- Units in css 
+absolute Units :-
+px :- pixle
+cm :- centi meter
+mm :- milli meter 10mm= 1 cm
+in : inch  1inch= 2.54 cm
+
+Relative Units:-
+%  :- parent to child effect
+em :- font size of parent , in the case of  "font-size"
+em :- font size of itself , in the other propertice like "width" 
+rem :- (root em ) font size of root element  "width"
+
+Other :- use some times
+vh:- relative to 1% view port height
+vw :-  relative to 1% view port width
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <style>
+    #box1{
+        width: 50vw;
+        height: 50vh;
+        background-color: aqua;
+        font-size: 20px;
+    }
+    #box2{
+        /* width: 50%; */
+        height: 100px;
+        background-color: blue;
+        font-size:3em;
+        width:4em;
+        width:4rem;
+    }
+ </style>
+</head>
+
+<body>
+    hello
+    <div id="box1">
+        box1
+        <div id="box2">box2</div>
+    </div>
+</body>
+
+</html>

@@ -105,9 +105,31 @@ place (like position:fixed). */
         top: 0px;
         left: 500px;
     }
+
+    #box1 {
+        position: relative;
+        z-index: -1;
+    }
+
+    #box2 {
+        position: relative;
+        right: 80px;
+        background-color: blue;
+        z-index: -2;
+    }
+
+    #box3 {
+        position: relative;
+        right: 150px;
+        background-color: green;
+        z-index: -3;
+    }
 </style>
 
 <body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis hic tempore excepturi minima ipsam inventore
         nobis ut, totam culpa quidem architecto perferendis recusandae laboriosam modi nulla deleniti consequatur iste
         quam ex perspiciatis doloribus nemo? Aperiam expedita tempore voluptate repellendus voluptas repellat, nobis
