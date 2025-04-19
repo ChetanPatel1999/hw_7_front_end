@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    div{
+        height: fit-content;
+        width: fit-content;
+        border: 2px solid red;
+        padding: 20px;
+        display: inline-block;
+        background-color: red;
+        color: white;
+    }
+    div:first-child{
+       background-color: blue; 
+    }
+    div:last-child{
+       background-color: yellowgreen; 
+    }
+    /* Targets elements with no children (including text nodes). */
+    div:empty
+    {
+        display: none;
+    }
+    /* its applay on radio,checkbox */
+    input:checked
+    {
+      outline: 2px solid red;
+    }
+   </style>
+</head>
+<body>
+  <div style="background-color: white;" >
+   <div>box1</div>
+   <div>box2</div>
+   <div style="width: 18px;height: 18px;" ></div>
+   <div>box4</div>
+   <div>box5</div>
+  </div>  
+  <input type="checkbox" >
+  <input type="radio" >
+</body>
+</html>

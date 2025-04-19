@@ -1,0 +1,84 @@
+<!-- What are Pseudo-classes?
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    button{
+        display: inline-block;
+        margin-top: 40px;
+        margin-left: 300px;
+        margin-right: 30px;
+        background-color: red;
+    }
+    /* hover pseudo class code is work when we over mouse on link,button,imag,table  */
+    button:hover{
+        background-color: blue;
+        color:white;
+        border-radius: 20px;
+        cursor:pointer;   
+    }
+    /* when we press on button and link submit*/
+    button:active
+    {
+        color: red;
+        border:2px solid red;
+    }
+    a:hover{
+        background-color: blue;
+        color: white;
+    }
+    a:active
+    {
+        color: red;
+        background-color: burlywood;
+    }
+    img{
+        width: 100px;
+        display: block;
+        margin-left: 200px;
+        margin-top: 30px;
+        opacity: 20%;
+    }
+    img:hover{
+        opacity: 100%;
+        cursor: pointer;
+        width: 130px;
+    }
+    div{
+        width: 150px;
+        height: 40px;
+        background-color: red;
+        text-align: center;
+        padding: 40px;
+        margin-top: 30px;
+    }
+    p{
+        background-color: burlywood;
+        font-size: 20px;
+        font-weight: bold;
+        color: red;
+        font-family: cursive;
+        display: none;
+    }
+    div:hover p{
+        display: block;
+        cursor: pointer;
+    }
+   </style>
+</head>
+<body>
+    <button>click me</button>
+    <a href="#">home</a>
+    <img src="images/fox.jpg" >
+    <div>
+        <p>hay i am here</p>
+    </div>
+</body>
+</html>
