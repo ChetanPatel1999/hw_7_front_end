@@ -1,0 +1,45 @@
+<!-- 
+ Transitions
+ Transitions enable you to define the transition between two states of an element. 
+ transition-property : property you want to transition (font-size, width etc.)
+ transition-duration : 2s / 4ms ..
+
+ transition-timing-function : ease-in / ease-out / linear / steps(2)
+
+ transition-delay : 2s / 4ms .
+
+ Transition Shorthand
+ property name | duration | timing-function | delay
+ transition: font-size 2s ease-in-out 0.2s;
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    div{
+        width: 150px;
+        height: 100px;
+        background-color: aqua;
+        /* transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: steps(4);
+        transition-delay: 2s; */
+        transition: all 5s steps(3) 2s;
+
+    }
+    div:hover{
+        background-color:blue;
+        color: white;
+        font-size: 30px;
+    }
+    div:active{
+        background-color: chartreuse;
+    }
+   </style>
+</head>
+<body>
+    <div>
+        this is box
+    </div>
+</body>
+</html>
