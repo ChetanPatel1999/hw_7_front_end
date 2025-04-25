@@ -1,0 +1,131 @@
+<!--
+ Animation
+ To animate CSS element 
+
+ The @keyframes rule specifies the animation code.
+
+The animation is created by gradually changing from
+ one set of CSS styles to another.
+
+During the animation, you can change the set of CSS styles many times.
+
+Specify when the style change will happen in percent, or with the keywords 
+"from" and "to", which is the same as 0% and 100%. 0% is the beginning of 
+
+@keyframes animationname {keyframes-selector {css-styles;}}
+
+the animation, 100% is when the animation is complete.
+ @keyframe myName {
+ from { font-size : 20px; }
+ to { font-size : 40px; }
+ }
+ Animation Properties
+ animation-name
+ animation-duration
+ animation-timing-function 
+ animation-delay
+ animation-iteration-count
+ animation-direction
+
+ Animation Shorthand
+ animation : myName 2s linear 3s infinite normal
+
+ % in Animation
+ @keyframe myName {
+ 0% { font-size : 20px; }
+ 50% { font-size : 30px; }
+ 100% { font-size : 40px; }
+ 
+ Create a simple loader using CSS
+ Step1 : create a div with circular shape & a thick border from one end
+ (top/bottom/left/right)
+ Step2 : To make it spin create an animation which transforms it from 0deg to 360deg
+ Step3 : Add the animation property to the loader with infinite duration
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 5px solid black;
+            background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            animation-name: coloranimat;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            animation-direction: normal;
+        }
+
+        /* @keyframes coloranimat {
+      from{background-color: red;}
+      to{background-color: blue;}
+    } */
+        /* @keyframes coloranimat {
+            from {
+                top:100px;
+                left: 0px;
+                background-color: red;
+              
+                transform: scale(1);
+            }
+
+            to {
+                top:100px;
+                left: 300px;
+                background-color: blue;
+              
+                transform: scale(2);
+            }
+        } */
+        /* @keyframes coloranimat {
+            0% {
+                background-color: red;
+                top:0px;
+                left: 0px;
+            }
+
+            50% {
+                top:100px;
+                left: 0px;
+                background-color: blue;
+            }
+
+            100% {
+                top:100px;
+                left: 300px;
+                background-color: chartreuse;
+            }
+        } */
+            @keyframes coloranimat {
+            0% {
+                background-color: red;
+                top:0px;
+                left: 0px;
+            }
+
+            100% {
+                top:200px;
+                left: 200px;
+                background-color: blue;
+            }
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>
