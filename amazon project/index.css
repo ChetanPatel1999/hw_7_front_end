@@ -159,3 +159,67 @@ span{
 .inside a{
    color:blue;
 }
+.main-contain{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: plum;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    height: 900px;
+}
+.main-contain div{
+    width: 280px;
+    height: 380px;
+    background-color: white;
+    padding: 15px;
+}
+.f1{
+    height: 15px;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgb(62, 62, 87);
+    padding: 20px;
+}
+.f1 p{
+    font-size: 0.85rem;
+}
+.f2{
+    background-color:rgb(32, 32, 51) ;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+.f2 a{
+    display: block;
+    color:#dddddd;
+    font-size: 0.85rem;
+    margin-top: 15px;
+}
+.f3{
+    background-color:rgb(32, 32, 51);
+    border-top: 1px solid #cccccc;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.f3 div{
+    background-image: url(images/amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 170px;
+}
+.f4{
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 20px;
+}
+.f4 a{
+    margin-left: 15px;
+}
+.f4 p{
+    margin-top: 8px;
+}
