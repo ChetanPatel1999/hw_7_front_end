@@ -1,0 +1,64 @@
+<!-- 
+Variables are Containers for Storing Data
+JavaScript Variables can be declared in 4 ways:
+
+Automatically
+Using var
+Using let
+Using const
+
+Note
+The var keyword was used in all JavaScript code from 1995 to 2015.
+
+The let and const keywords were added to JavaScript in 2015.
+
+The var keyword should only be used in code written for older browsers.
+
+When to Use var, let, or const?
+
+1. Always declare variables
+
+2. Always use const if the value should not be changed
+
+3. Only use let if you can't use const
+
+4. Only use var if you MUST support old browsers.
+
+Block Scope
+Before ES6 (2015), JavaScript did not have Block Scope.
+
+JavaScript had Global Scope and Function Scope.
+
+ES6 introduced the two new JavaScript keywords: let and const.
+
+These two keywords provided Block Scope in JavaScript:
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <script>
+        let hi=90
+        {
+            let b = 34
+            b=56
+            const pi=3.141
+            //pi=56    // we can not change constant variable
+            document.write(b, "<br>")
+            document.write(hi, "<br>")
+            document.write(pi, "<br>")
+        }
+        {
+            let a = 12
+            document.write(a, "<br>")
+            document.write(hi, "<br>")
+        }
+
+    </script>
+</body>
+
+</html>
