@@ -1,7 +1,7 @@
-//wap to check given char is alphabet or digit or special symbol.
+//wap to check given char is alphabet  or digit or special symbol.
 let ch;
-ch = prompt("enter a char :");
-if (ch >= 'a' && ch <= 'z' || ch >= "A" && ch <= "Z") {
+ch = prompt("enter a char :");//A
+if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z') {
     console.log("char is alphabet");
 }
 else if (ch >= '0' && ch <= '9') {
