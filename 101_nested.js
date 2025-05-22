@@ -1,34 +1,21 @@
-//wap to print assending order of given three number.
-let num1, num2, num3;
-num1 = 121, num2 = 78, num3 = 900;
-if (num1 > num2 && num1 > num3) {
-    if (num2 > num3) {
-        console.log("dessending order :", num1, num2, num3);
-        console.log("assending order :", num3, num2, num1);
+//wap to make mini club project
+let age = Number(prompt("enter your age : "))//45
+if (age >= 18) {
+    let num = Number(prompt("welcome to my club : \n 1. noodles : 60 \n 2. pizza : 100\n 3. sandwitch : 120\n choose option : "))
+    if (num == 1) {
+        alert("your noodles is orderd please pay 60 rs");
+    }
+    else if (num == 2) {
+        alert("your pizza is orderd please pay 100 rs");
+    }
+    else if (num == 3) {
+        alert("your sandwitch is orderd please pay 120 rs");
     }
     else {
-        console.log("dessending order :", num1, num3, num2);
-        console.log("assending order :", num2, num3, num1);
-    }
-}
-else if (num2 > num3) {
-
-    if (num1 > num3) {
-        console.log("dessending order :", num2, num1, num3);
-        console.log("assending order :", num3, num1, num2);
-    }
-    else {
-        console.log("dessending order :", num2, num3, num1);
-        console.log("assending order :", num1, num3, num2);
+        alert("choosed wrong option");
     }
 }
 else {
-    if (num1 > num2) {
-        console.log("dessending order :", num3, num1, num2);
-        console.log("assending order :", num2, num1, num3);
-    }
-    else {
-        console.log("dessending order :", num3, num2, num1);
-        console.log("assending order :", num1, num2, num3);
-    }
+    alert("you are not adult try after " + (18 - age) + " year")
 }
+alert("please visit again ");
