@@ -1,0 +1,95 @@
+<!-- <script>
+    //wap to print individual digit  in reverse order in new lines.
+    let num = 652,rem;
+    while (num > 0) {
+        rem = num % 10;
+        console.log(rem); // 
+        num = parseInt(num / 10);
+    }
+</script> -->
+<!-- <script>
+    //wap to print sum of individul digit of given number.
+    let num = 5432, sum = 0, rem;
+    while (num > 0) {
+        rem = num % 10;
+        sum = sum + rem;
+        num = parseInt(num / 10);
+    }
+    console.log("sum of indivudula digit : "+sum);// 9
+</script> -->
+<!-- <script>
+    //wap to count digit in given number.
+    let num = 545, c = 0;
+    while (num > 0) {
+        c++;
+        num = parseInt(num / 10);
+    }
+    console.log("total digit in given number : "+c);// 4
+</script> -->
+<!-- <script>
+    //wap to print sum of individul even digit of given number.
+    let num = 5432, sum = 0, rem;
+    while (num > 0) {
+        rem = num % 10;
+        if (rem % 2 == 0) {
+            sum = sum + rem;
+        }
+        num = parseInt(num / 10);
+    }
+    console.log("sum of indivudula even digit : " + sum);// 6
+</script> -->
+<!-- <script>
+    //wap to print reverse number of given number.
+    let num = 345, ans = 0, rem;
+    while (num > 0) {
+        rem = num % 10;
+        ans = ans * 10 + rem;// 321
+        num = parseInt(num / 10);
+    }
+    console.log(ans);// 321
+</script> -->
+<!-- <script>
+    //wap to print reverse number of given number.
+    let num = 345, ans ="", rem;
+    while (num > 0) {
+        rem = num % 10;
+        ans=ans+rem;
+        num = parseInt(num / 10);
+    }
+    console.log(ans);// 321
+</script> -->
+<!-- <script>
+    //wap to check given digit is found in given number or not and if 
+    // found so how many times found.
+    let num = 34532234, d =2, rem, c = 0;
+    while (num > 0) {
+        rem = num % 10;
+        if (rem == d) {
+            c++
+        }
+        num = parseInt(num / 10);
+    }
+     if(c==0)
+     {
+        console.log("digit is not found")
+     }
+     else{
+        console.log("digit "+c+" times found in number")
+     }
+</script> -->
+<script>
+    //wap to check given number is plindrom or not.
+    let num = 141141, rev = 0, rem, temp;
+    temp = num;
+    while (num > 0) {
+        rem = num % 10;
+        rev = rev * 10 + rem;
+        num = parseInt(num / 10);
+    }
+    if (rev == temp) {
+        console.log("plindrom number");
+    }
+    else {
+        console.log("not plindrom number");
+    }
+</script>
