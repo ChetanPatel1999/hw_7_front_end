@@ -1,0 +1,60 @@
+<!-- <script>
+    let i = 1;
+    do {
+        console.log(i);
+        i++;//6
+    } while (i <= 5);
+</script> -->
+<!-- <script>
+    let i = 1;
+    do {
+        if (i % 2 == 0) {
+            console.log(i);
+        }
+        i++;//6
+    } while (i <= 20);
+</script> -->
+<!-- <script>
+    let num;
+    do {
+        alert("papa please purchesed scooty");
+        num = prompt("if scooty not perchesed so press 1 :");
+    } while (num == 1);
+    alert("thanks papa for scooty");
+
+</script> -->
+<script>
+    let choise;
+    do {
+        let num = Number(prompt("welcome to my calculator ...\n 1. addition \n 2. subtraction \n 3. multiplication \n 4. division\n choose option : "))
+        let num1, num2, ans;
+        switch (num) {
+            case 1:
+                num1 = Number(prompt("enter frist num : "));
+                num2 = Number(prompt("enter second num : "));
+                ans = num1 + num2;
+                alert(num1 + " + " + num2 + " = " + ans)
+                break;
+            case 2:
+                num1 = Number(prompt("enter frist num : "));
+                num2 = Number(prompt("enter second num : "));
+                ans = num1 - num2;
+                alert(num1 + " - " + num2 + " = " + ans)
+                break;
+            case 3:
+                num1 = Number(prompt("enter frist num : "));
+                num2 = Number(prompt("enter second num : "));
+                ans = num1 * num2;
+                alert(num1 + " * " + num2 + " = " + ans)
+                break;
+            case 4:
+                num1 = Number(prompt("enter frist num : "));
+                num2 = Number(prompt("enter second num : "));
+                ans = num1 / num2;
+                alert(num1 + " / " + num2 + " = " + ans)
+                break;
+            default: alert("wrong choise please press 1 to 4");
+        }
+        choise = prompt("do you want to continue calculator so pres 'yes' : ")
+    } while (choise == "yes");
+</script>
