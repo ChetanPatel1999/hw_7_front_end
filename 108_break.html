@@ -40,7 +40,7 @@
         console.log("num is not found in table")
     }
 </script> -->
-<script>
+<!-- <script>
     //wap to check given number is prime or not.
     let i, n = 492, c = 0;
     for (i = 1; i <= n; i++) //3
@@ -58,5 +58,34 @@
     }
     else {
         console.log("num is not prime");
+    }
+</script> -->
+<!-- <script>
+    //break with while loop
+    let i = 1;
+    while (i <= 10) {
+        if (i == 5) {
+            break;
+        }
+        console.log(i);
+        i++;
+    }
+</script> -->
+<script>
+    //break with while loop
+    let num = 324244532, s =4, rem, isFind = false;
+    while (num > 0) {
+        rem = num % 10;
+        if (rem == s) {
+            isFind = true
+            break;
+        }
+        num = parseInt(num / 10);
+    }
+    if (isFind == true) {
+        console.log("digit is found")
+    }
+    else {
+        console.log("digit is not found")
     }
 </script>
