@@ -1,0 +1,30 @@
+<!-- <script>
+    //labling of loops 
+    let i, j;
+    lab1:
+    for (i = 1; i <= 5; i++) {
+        lab2:
+        for (j = 1; j <= 5; j++) {
+            if (i == 3) {
+                break lab1;
+            }
+            document.write(j + " ")
+        }
+        document.write("<br>")
+    }
+</script> -->
+<script>
+    //labling of loops 
+    let i, j;
+    lab1:
+    for (i = 1; i <= 5; i++) {
+        lab2:
+        for (j = 1; j <= 5; j++) {
+            if (j == 3) {
+                continue lab1;
+            }
+            document.write(j + " ")
+        }
+        document.write("<br>")
+    }
+</script>
