@@ -1,0 +1,51 @@
+<!-- <script>
+    //string is unchangeble/immutable in java script
+    let name = "chetan";
+    name[0] = 'p';
+    console.log(name);  //phetan
+</script> -->
+<!-- <script>
+    //wap to replace c with p in given string.
+    let name = prompt("enter string : ");
+    let newstr = ""
+    for (let i = 0; i < name.length; i++)//2
+     {
+
+        if (name[i] == 'c') {
+            newstr = newstr + 'p';//"p"
+        }
+        else {
+            newstr = newstr + name[i];//"phetan"
+        }
+    }
+    console.log(name);//chetanccc
+    console.log(newstr);//phetanppp
+</script> -->
+<!-- <script>
+    //wap to print reverse string of given string.
+    let name = prompt("enter string : ");//chetan
+    let newstr = ""
+    for (let i = name.length - 1; i >= 0; i--)//-1
+    {
+        newstr = newstr + name[i]; // "natehc"
+    }
+    console.log("string : " + name);//chetan
+    console.log("reverse string : " + newstr);//natehc
+</script> -->
+<script>
+    //wap to convert string in upper case.
+    // hello ----> HELLO    abc--->ABC
+    let name = prompt("enter string : ");//abc
+    let newstr = ""
+    for (let i = 0; i < name.length; i++)//-1
+    {
+        if (name[i].charCodeAt() >= 97 && name[i].charCodeAt() <= 122) {
+            newstr = newstr + String.fromCharCode(name[i].charCodeAt() - 32);
+        }
+        else {
+            newstr = newstr + name[i];
+        }
+    }
+    console.log("string : " + name);//chetan
+    console.log("uppercase string : " + newstr);//natehc
+</script>
