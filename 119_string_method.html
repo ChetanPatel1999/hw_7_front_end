@@ -1,0 +1,25 @@
+<!-- 
+  STRING METHODS 
+  str.length  :- return string length
+  str.toUpperCase()  :- its return uppercase string
+  str.toLowerCase() :- its return lowercase string
+  str.includes("chetan"):- its return true if chetan in str other wise false
+  str.startsWith("my") :- its return true if str start with my other wise false
+  str.endsWith("@gmail.com"):- its return true if str ends with '@gmail.com' other wise false
+  str.search("am") :- its return position of 'am' in str if 'am' not find in str so its return -1
+  str.match("chetan") :- its return object with ['chetan', index: 8, input: 'hi i am chetan patel', groups: undefined]
+  str.match(/chetan/g) :- its return multiple times chetan if chetan in str
+  str.matchAll("chetan") :- its also return multiple chetan 
+  str.IndexOf("chetan"):- its return index of "chetan"
+  str.lastIndexOf("chetan") :- its return last "chetan"  index
+  str.replace("chetan","ram") :- its replace only frist chetan with ram
+  str.replace(/chetan/g,"ram"):- its replace from string all chetan with ram
+  str.replaceAll("chetan","ram"):- its replace from string all chetan with ram
+  -->
+<script>
+    let str = "hi chetan i am chetan patel chetan";
+    let ans = str.replaceAll("chetan", "ram");
+    console.log(ans)
+
+
+</script>
