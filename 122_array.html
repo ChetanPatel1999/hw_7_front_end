@@ -1,0 +1,41 @@
+<!-- <script>
+    //visit/iterate array element using for loop
+    let arr = [12, 34, 56, 78, 90]
+    for (i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+</script> -->
+<!-- <script>
+    //visit /iterate array element using for of loop
+    let arr = [12, 34, 56, 78, 90];
+    for (let i of arr) {
+        console.log(i);
+    }
+</script> -->
+<!-- <script>
+    //wap to print sum of array element.
+    let marks = [12, 34, 56, 78, 90,10,100];
+    let sum = 0;
+    for (let i = 0; i < marks.length; i++) {
+        sum = sum + marks[i];//270
+    }
+    console.log("total sum of marks : " + sum)
+</script> -->
+<script>
+    //wap to print sum of array element.
+    let marks = [];
+    let n = Number(prompt("enter array size :"))
+    for (let i = 0; i < n; i++) {
+        marks[i] = Number(prompt(`enter marks s${i + 1}`))
+    }
+    let res="";
+    for (let i = 0; i < n; i++) {
+        res=res+marks[i]+" "
+    }
+    console.log("marks : "+res)
+    let sum = 0;
+    for (let i = 0; i < marks.length; i++) {
+        sum = sum + marks[i];//270
+    }
+    console.log("total sum of marks : " + sum)
+</script>
