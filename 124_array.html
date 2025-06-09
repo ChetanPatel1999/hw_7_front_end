@@ -1,0 +1,84 @@
+<!-- <script>
+    //wap to find max element from array.
+    let arr = [34, 500, 6, 78, 900, 12, 56]
+    let max = arr[0];//34
+    for (let i = 0; i < arr.length; i++)//4
+     {
+        if (max < arr[i]) {
+            max = arr[i];//780
+        }
+    }
+    console.log("array element : ",arr)
+    console.log("max element : ",max)
+</script> -->
+<!-- <script>
+    //wap to swap last and frist element of array.
+    let arr = [345, 500, 6, 78, 900, 12, 556,99]
+    console.log("array element : ", arr)//34, 500, 6, 78, 900, 12, 56
+    let temp=arr[0];
+    arr[0]=arr[arr.length-1];
+    arr[arr.length-1]=temp;
+    console.log("after swap array element : ", arr)
+    //56, 500, 6, 78, 900, 12, 32
+</script> -->
+<!-- <script>
+    //wap to find given element in array using linear searching.
+    let arr = [345, 500, 6, 78, 900, 12, 556, 99]
+    let num = Number(prompt("enter a num : "))//6
+    let is_find = false;
+    for (let i = 0; i < arr.length; i++) // 1
+    {
+        if (num == arr[i]) {
+            is_find = true;
+        }
+    }
+    if (is_find == true) {
+        console.log("element is found")
+    }
+    else {
+        console.log("element is not found");
+    }
+</script> -->
+<!-- <script>
+    //wap to print array element in reverse order.
+    let arr = [345, 500, 6, 78, 900, 12, 556, 99]
+    let res=""
+    console.log("array element are : ",arr)
+    for (let i = arr.length - 1; i >= 0; i--) {
+        res+=arr[i]+" "
+    }
+    console.log("reverse array : "+res)
+</script> -->
+<!-- <script>
+    //wap to revesre array element in same array.
+    let arr = [345, 500, 6, 78, 900, 12, 556, 99]
+    console.log("array element are : ", arr)
+    let temp;
+    for (let i = 0; i < parseInt((arr.length) / 2); i++)//3 
+    {
+        temp = arr[i];
+        arr[i] = arr[arr.length - 1 - i];
+        arr[arr.length - 1 - i] = temp;
+    }
+    console.log("reverse array : ",arr)
+</script> -->
+<script>
+    //wap to take a array from user and make two array which store even
+    // or odd values. 
+    let arr = [12, 4, 6, 3, 8, 9, 5, 6]
+    let evenarr = [], j = 0;
+    let oddarr = [], k = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            evenarr[j] = arr[i];
+            j++;
+        }
+        else {
+            oddarr[k] = arr[i];
+            k++;
+        }
+    }
+    console.log("array element : ", arr)
+    console.log("even element : ", evenarr)
+    console.log("odd element : ", oddarr)
+</script>
