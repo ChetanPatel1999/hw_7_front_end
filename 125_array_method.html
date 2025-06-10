@@ -1,0 +1,108 @@
+<!-- 
+ Array methods :- 
+ arr.length //  its return array length 
+ arr.pop() // its delete last element of array and also return
+ arr.push(45,67,89) // its used to add eleemnt in array at end of array
+ arr.reverse() // its currunt array make reverse and also return reverse array.
+ Array.isArray(arr2) // its check array types literal or not
+ arr.join("+") // its return string with join all array element with + sign
+ arr.slice(2,4); // its return new array from privius array 2 to 3 index element
+ arr.splice(1,2,"hy","by","mai") // arr.splice(start,delete(count),newvalues) // to change some value in array
+ arr.toString():- its convert array in string
+ arr.at(3); // its return passing index element from array.
+ delete arr[0] // delete frist element and leave undifined holes
+ arr.shift()  // this method delete frist elemnet and also return  and shift all element at lower index
+ arr.unshif(666) // this method add element at the bignning and also return size of new array
+ -->
+<script>
+    let arr = [12, 34, 56, 78, 90]
+    let ans = arr.at(3);
+    console.log(ans)
+</script>
+<!-- <script>
+    let arr=[12,34,56,78,90]
+    let res=arr.toString()
+    console.log(res,typeof res)
+
+ </script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90]
+    console.log(arr);
+    arr.splice(2,2,"hello","home","pen")
+    console.log(arr);//[12,34,"hello","home","pen",90]
+</script> -->
+<!-- <script>
+  let arr=[12,34,56,78,90]
+  let res=arr.slice(2,4);
+  console.log(res);
+ </script> -->
+<!-- <script>
+    //wap to on array
+    //input array :- [12,34,56,78,90]
+    //output array :- [1255,3455,7855,9055]
+    let arr = [12, 34, 56, 78, 90];
+
+    let res = arr.join("55 ") + "55"; // "1255 3455 5655 7855 9055"
+    let arr2 = res.split(" ") //['1255','3455','5655','7855','9055']
+    let arr3 = [];
+    for (let i of arr2) {
+        arr3.push(Number(i))
+    }
+    console.log(arr)
+    console.log(arr3)
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90]
+    let res1 = arr.join("+")
+    let res2= arr.join("<------|>")
+    console.log(arr)
+    console.log(res1)
+    console.log(res2)
+</script> -->
+<!-- <script>
+    let arr=[12,34,56,78,90]
+    let arr1=78
+    let arr2="hello"
+    let ans=Array.isArray(arr2);
+    console.log(ans)
+ </script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90]
+    console.log(arr)
+    let ans = arr.reverse()
+    console.log(arr)
+    console.log(ans)
+</script> -->
+<!-- <script>
+    //wap to take a array from user and make two array which store even
+    // or odd values. 
+    let arr = [12, 4, 6, 3, 8, 9, 5, 6]
+    let evenarr = [];
+    let oddarr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            evenarr.push(arr[i]);
+        }
+        else {
+            oddarr.push(arr[i]);
+        }
+    }
+    console.log("array element : ", arr)
+    console.log("even element : ", evenarr)
+    console.log("odd element : ", oddarr)
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 40, 78, 90];
+    console.log(arr);
+    arr.push(555);
+    console.log(arr);
+    arr.push(45,23,600);
+    console.log(arr)
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 40, 78, 90];
+    console.log(arr);
+    let ans = arr.pop()
+    console.log(arr);
+    console.log("deleted element : " + ans);
+</script> -->
