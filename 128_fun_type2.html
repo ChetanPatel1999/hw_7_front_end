@@ -1,0 +1,39 @@
+<script>
+    //no return value but with parameter
+    function add(a, b, c) // a b c is three parameter 
+    {
+        let d = a + b + c;
+        console.log(`sum of ${a} and ${b} and  ${c} = ${d} `);
+    }
+    function cube(n)// n is a parameter
+    {
+        let res = n * n * n;
+        console.log(`cube of ${n} = ${res}`);
+    }
+    function factorial(num) {
+        let fact = 1, i;
+        for (i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+        console.log(`factorial of ${num} = ${fact}`)
+    }
+    function range(s, e) {
+        let i;
+        for (i = s; i <= e; i++)//3
+        {
+            cube(i);
+        }
+    }
+    add(12, 6, 7); //  here we pass 3 argument at the function calling
+    add(4, 6, 2);
+    add(56, 3, 4);
+    cube(5);//  here we pass 1 argument at the function calling
+    cube(2);
+    cube(3);
+    factorial(5)
+    factorial(3)
+
+    range(1, 10);
+    range(10, 20);
+
+</script>
