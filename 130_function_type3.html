@@ -1,0 +1,44 @@
+<script>
+    //with return value ,with parameter
+    function prime(num) //15
+    {
+        for (let i = 2; i < num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    console.log(prime(17))
+
+    let arr = [34, 67, 89, 32, 45];
+    console.log("array element :  ", arr)
+    for (let i = 0; i < arr.length; i++) {
+        if (prime(arr[i])) {
+            console.log(arr[i])
+        }
+    }
+
+
+</script>
+<!-- <script>
+    //with return value ,with parameter
+    function reverse(num) //34
+    {
+        let rem, rev = 0;
+        while (num > 0) {
+            rem = num % 10;//3
+            rev = rev * 10 + rem;//43
+            num = parseInt(num / 10);
+        }
+        return rev;
+    }
+
+    let arr = [34, 67, 89, 32, 45];
+    console.log("array element :  ", arr)
+    for (i = 0; i < arr.length; i++) // 1
+    {
+        arr[i] = reverse(arr[i]);
+    }
+    console.log("array  element reverse :  ", arr)
+</script> -->
