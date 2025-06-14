@@ -1,0 +1,46 @@
+<!--
+  basic structure of arrow function
+
+   const function_name = (paramter)=> {
+    //code
+   }
+-->
+<script>
+    //arrow function
+    // multiple paramter arrow function
+    const add = (a, b) => a + b;
+
+    const average = (a, b, c) => (a + b + c) / 3;
+
+    //single paramter arrow function
+
+    const square = x => x * x;
+    const cube = x => x * x * x;
+    const circle_area = r => 3.141 * r * r
+
+    // without para meter arrow function
+
+    const print_hello = () => console.log("hello students");
+
+    // multile instruction in arrow function
+    const great_num = (a, b) => {
+
+        if (a > b)
+            return a;
+        else
+            return b;
+    }
+
+    //arrow function calling 
+    console.log("cricle area : " + circle_area(4.5))
+    console.log(great_num(34, 56));
+    console.log(great_num(500, 56));
+    print_hello();
+    console.log("square : " + square(5))
+    console.log("square : " + square(6))
+    console.log("cube : " + cube(4))
+    let res = add(12, 5);
+    console.log(res)
+    console.log(add(6, 9))
+    console.log(average(12, 10, 20))
+</script>
