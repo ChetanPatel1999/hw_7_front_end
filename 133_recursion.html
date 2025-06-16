@@ -1,0 +1,131 @@
+<!--
+recursion :- when a function call itself is called recursion. 
+  -->
+<!-- <script>
+    // its print infinite times 
+    function fun() {
+        console.log("hello students ")
+        fun(); // recursive calling
+    }
+    // function calling with main program 
+    fun();
+</script> -->
+<!-- <script>
+    // wap to print a msg 5 times using recusrion.
+    let i = 1;
+    function fun() {
+        console.log("hello students ")//5
+        i++;//6
+        if (i <= 5) {
+            fun();
+        }
+    }
+
+    fun();
+</script> -->
+<!-- <script>
+    // wap to print 1 to 10 number using recusrion.
+    let i = 1;
+    function fun() {
+        console.log(i)//5
+        i++;//6
+        if (i <= 10) {
+            fun();
+        }
+    }
+    fun();
+</script> -->
+<!-- <script>
+    // wap to print 1 to 20 even number using recusrion.
+    let i = 1;
+    function fun() {
+        if (i % 2 == 0) {
+            console.log(i)
+        }
+        i++;//4
+        if (i <= 20) {
+            fun();
+        }
+    }
+    fun();
+</script> -->
+<!-- <script>
+    // wap to print 10  to 1 number using recursion .
+    function fun(num) {
+        console.log(num);// 10 9  8 7 ..... 2 1
+        if (num > 1) {
+            fun(num - 1);
+        }
+    }
+
+    fun(10);
+</script> -->
+<!-- <script>
+    // wap to print 1  to 10 number using recursion .
+    function fun(num) {
+        if (num > 1) {
+            fun(num - 1);
+        }
+        console.log(num);
+    }
+
+    fun(5);
+</script> -->
+<!-- <script>
+    // wap to a msg 5 times using recursion .
+    function fun(num) {
+        if (num > 1) {
+            fun(num - 1);
+        }
+        console.log("hello student ");
+    }
+
+    fun(5);
+</script> -->
+<!-- <script>
+    // wap to print 1  to 20 even number using recursion .
+    function fun(num) {
+        if (num > 1) {
+            fun(num - 1);
+        }
+        if (num % 2 == 0) {
+            console.log(num);
+        }
+    }
+
+    fun(20);
+</script> -->
+<!-- <script>
+    // wap to print factorial of given number.
+    function factorial(num) {
+       if(num==0)
+       {
+         return 1;
+       }
+       return num*factorial(num-1);
+    }
+
+    //factorial(5);
+</script> -->
+<!-- <script>
+    // wap to print sum 1 to 10 number.
+    function sum(num) {
+       if(num==0)
+       {
+         return 0;
+       }
+       return num+sum(num-1);
+    }
+    //sum(5);
+</script> -->
+<script>
+    // wap to print table of given number.
+    function table(num,i=1) {
+        console.log(num*i);
+       if(i<10)
+       {
+           table(num,i+1)
+       }
+    }
+    table(7)
+</script>
