@@ -1,0 +1,23 @@
+<!-- map methods for array similer to forEach 
+
+  map :- creates a new array with the results of some operation. the value 
+  its callback returns are used to form new array. -->
+
+<script>
+    let arr = [2, 4, 3, 5]
+
+    let newarr1 = arr.map(val => val * val);
+
+    console.log(arr);
+    console.log(newarr1);
+
+    let newarr2 = arr.map(val => val * val * val);
+
+    console.log(arr);
+    console.log(newarr2);
+
+    let newarr3 = arr.map(val => val + 5);
+
+    console.log(arr);
+    console.log(newarr3);
+</script>

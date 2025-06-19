@@ -1,0 +1,39 @@
+<!-- forEach Loop in arrays
+
+arr.forEach(callBackFunction)
+
+CallbackFunction:- here it is a function to execute for each element in the array
+
+** Callback is a function passed  as an argument to another function.  -->
+<!-- <script>
+    function print(val) {
+        console.log(val);
+    }
+
+    let arr=[12,34,56,78,90]
+    arr.forEach(print)
+</script> -->
+<!-- <script>
+    let arr = [12, 34, 56, 78, 90]
+    
+    arr.forEach(function print(val) {
+        console.log(val);
+    })
+</script> -->
+<script>
+    let arr = [2, 3, 6, 8, 9]
+     
+    // its only display array element 
+    arr.forEach((val,ind,arrayitself)=>console.log(ind,val,arrayitself))
+
+    // its only display array element 
+    arr.forEach(val=>console.log(val))
+    
+    // print  square of all array element
+    console.log("array square :- ")
+    arr.forEach(val=> console.log(val*val))
+
+    // print  array element with adding each 5 
+    console.log("array element with add 5 :- ")
+    arr.forEach(val=> console.log(val,val+5))
+</script>

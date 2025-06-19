@@ -1,0 +1,31 @@
+<!-- filter method of array :- 
+  creates new array of element that given true for a condition/filter.  -->
+
+<script>
+    let arr = [2, 8, 6, 7, 9]
+
+    //filter  btween 5 or 8 
+    let newarr4 = arr.filter(val => val > 5 && val < 8)
+
+    console.log(arr);
+    console.log(newarr4);
+
+    //filter  even value
+    let newarr1 = arr.filter(val => val % 2 == 0)
+
+    console.log(arr);
+    console.log(newarr1);
+
+    //filter  odd value
+    let newarr2 = arr.filter(val => val % 2 == 1)
+
+    console.log(arr);
+    console.log(newarr2);
+
+    //filter multiple of 3
+    let newarr3 = arr.filter(val => val % 3 == 0)
+
+    console.log(arr);
+    console.log(newarr3);
+
+</script>
