@@ -1,0 +1,26 @@
+<!-- 
+ reduce method :- 
+  Perform some operation on array and reduces array into the single value  . it returns the single value .
+-->
+<script>
+    let arr = [1, 2, 3, 4, 5]
+    console.log(arr);
+    arr.forEach(val => console.log(val * val))
+    let sum = arr.reduce((res, val) => res + val);
+    console.log("sum = ", sum);
+
+    let sum2 = arr.reduce((res, val) => res + val * val);
+    console.log("array element squre sum = ", sum2);
+
+    //only resturn even number sum from array
+    let ans = arr.filter(val => val % 2 == 0).reduce((res, val) => res + val)
+    console.log(ans)
+
+
+    let arr2 = [45, 6, 89, 56, 7]
+
+    let max = arr2.reduce((res, val) => res > val ? res : val)
+
+    console.log("max = ", max);
+
+</script>
