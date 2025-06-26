@@ -1,0 +1,51 @@
+<!-- 
+Let‘s Practice
+ Qs. Create a H2 heading element with text - “Hello JavaScript”. Append
+  “from hello world institute ” to this text using JS.
+ Qs. Create 3 divs with common class name - “box”. Access them & add some unique text to each
+ of them 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hello javascript</h1>
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <button onclick="fun()">click me !</button>
+    <script>
+        function fun() {
+            let h1 = document.querySelector("h1")
+            h1.innerText = h1.innerText + " from hello world institute";
+
+            let divs = document.querySelectorAll(".box")
+
+            // divs[0].innerText = "unique text 1"
+            // divs[1].innerText = "unique text 2"
+            // divs[2].innerText = "unique text 3"
+            let i=1
+            for (div of divs) {
+               div.innerText=`unique text  ${i++}`
+            }
+        }
+
+    </script>
+</body>
+
+</html>

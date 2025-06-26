@@ -1,0 +1,76 @@
+<!-- 
+
+ DOM Manipulation :-
+
+ Properties :-  using this properties we can get / change / update dom element value/data.
+
+ tagName : returns tag for element nodes
+ innerText : returns the text content of the element and all its children
+ innerHTML : returns the plain text or HTML contents in the element
+ textContent : returns textual content even for hidden elements
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="visibility: hidden;">hello world institute</h1>
+    <p id="myid">provide hands on prctice by hello world institute</p>
+    <div>
+        hello div
+        <h2>fruite name </h2>
+        <ul>
+            <li>apple</li>
+            <li>banana</li>
+            <li>mango</li>
+        </ul>
+    </div>
+    <script>
+        // let element = document.querySelector("#myid");
+        // console.log(element.tagName)
+
+
+        // innerText : returns the text content of the
+        //  element and all its children
+
+        // let element= document.querySelector("div")
+        // console.log(element.innerText)
+        // console.log(element.children)
+
+        // console.log(element.children[0].innerText)
+
+        // console.log(element.children[1].innerText)
+
+        // console.log(element.children[1].children[1].innerText)
+
+
+
+        // innerHTML : returns the plain text or HTML 
+        // contents in the element
+        // let element= document.querySelector("div")
+        // console.log(element.innerHTML)
+
+
+        // we can also change or set innerText / innerHTML
+        // let element= document.querySelector("div")
+        // element.innerText="hello brother"
+
+        // let element= document.querySelector("div")
+        // element.children[0].innerText="vegitables"
+
+        // let element = document.querySelector("div")
+        // element.children[0].innerHTML = "<div style='color:red ' >hello students</div>";
+
+
+        // textContent : returns textual content even for hidden elements
+        let element = document.querySelector("h1")
+        console.log(element.textContent)
+    </script>
+</body>
+
+</html>
