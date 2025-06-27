@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div style=" width: 100px;height: 100px;">
+
+    </div>
+    <button onclick="width()">width</button>
+    <button onclick="height()">height</button>
+    <button onclick="color()">color</button>
+    <button onclick="hide()">hide</button>
+    <button onclick="show()">show</button>
+    <script>
+        function width() {
+            let ele = document.querySelector("div");
+            ele.style.width = Number(ele.style.width.slice(0, -2)) + 10 + "px";   // "110px"
+        }
+        function height() {
+            let ele = document.querySelector("div");
+            ele.style.height = Number(ele.style.height.slice(0, -2)) + 10 + "px";   // "110px"
+        }
+        let i = 0;
+        function color() {
+            let ele = document.querySelector("div");
+            let colors = ["pink", "blue", "red", "green", "purple", "black"]
+
+            ele.style.backgroundColor = colors[i];
+            i++;//6
+            if (i == 6) {
+                i = 0;
+            }
+        }
+        function hide()
+        {
+              let ele = document.querySelector("div");
+              ele.style.visibility="hidden";
+        }
+         function show()
+        {
+              let ele = document.querySelector("div");
+              ele.style.visibility="visible";
+        }
+    </script>
+</body>
+
+</html>
