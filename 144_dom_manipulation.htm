@@ -1,0 +1,75 @@
+<!-- 
+DOM Manipulation
+ Insert Elements
+ let el = document.createElement("div")
+ node.append( el ) //adds at the end of node (inside)
+ node.prepend( el ) //adds at the start of node (inside)
+ node.before( el ) //adds before the node (outside)
+ node.after( el ) //adds after the node (outside) 
+
+  Delete Element
+ node.remove( ) //removes the node
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass {
+            border: 1px solid black;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hello world institute</h1>
+    <div class="myclass">
+
+        <h3>course detail</h3>
+        <ul>
+            <li>html</li>
+            <li>python</li>
+            <li>java</li>
+        </ul>
+
+    </div>
+    <p> visit choching for more details</p>
+
+    <script>
+        let btn1 = document.createElement("button");
+        btn1.innerText = "click me!";
+
+        let div = document.querySelector(".myclass");
+
+        // div.append(btn1);
+
+        // div.prepend(btn1);
+
+        // div.before(btn1);
+
+        div.after(btn1);
+
+        let btn2 = document.createElement("button");
+        btn2.innerText = "open file!";
+        let para = document.querySelector("p");
+        para.after(btn2);
+
+        let heading = document.createElement("h3");
+        heading.innerHTML = "<i>learn programming</i>";
+
+        let h1 = document.querySelector("h1");
+        h1.before(heading);
+
+
+        // to remove any html element from dom
+
+        // h1.remove();
+        btn1.remove();
+    </script>
+</body>
+
+</html>
