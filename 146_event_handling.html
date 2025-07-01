@@ -1,0 +1,69 @@
+<!-- 
+Events in JS
+ The change in the state of an object is known as an Event
+ Events are fired to notify code of "interesting changes" that may affect code execution.
+
+ event handling :- when we perform some task when event fire so this process is called event handling.
+
+
+ Mouse events (click, double click etc.)
+ Keyboard events (keypress, keyup, keydown)
+ Form events (submit etc.)
+ Print event & many more 
+
+ Event Handling in JS
+ node.event = ( ) => {
+ //handle here
+ }
+ example
+ btn.onclick = ( ) => {
+ console.log(“btn was clicked”);
+ }
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+     inline event handling
+     -->
+    <button class="btn1" onclick="console.log('button was clicked');alert('hello button')">click me !</button>
+    <button ondblclick="console.log('button was double clicked')">double click me !</button>
+    <div onmouseleave="console.log('mouse leave from div')" onmouseover="console.log('mouse over on div')">
+    </div>
+    <script>
+        let btn1 = document.querySelector(".btn1");
+        // when  we handle event by inline handling and js both so that time js handling have priority.
+        btn1.onclick = () => {
+            console.log("button was clicked handle by js")
+        }
+
+        let div = document.querySelector("div");
+
+        div.onmouseover = () => {
+            console.log("onmouseover handle by js1");
+        }
+        // second time same event handle so first is override by second event handler
+        div.onmouseover = () => {
+            console.log("onmouseover handle by js2");
+        }
+
+    </script>
+</body>
+
+</html>

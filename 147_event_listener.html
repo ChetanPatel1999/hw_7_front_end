@@ -1,0 +1,48 @@
+<!-- 
+Event Listeners
+ here at a time we can perform more than one funtion for same 
+ event occure.
+ node.addEventListener( event, callback function) 
+
+ node.removeEventListener( event, callback function) 
+
+ *Note : the callback reference should be same to remove
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>click me !</button>
+    <script>
+        let btn = document.querySelector("button");
+
+        btn.addEventListener("click", () => {
+            console.log("button was clicked 1");
+        });
+
+        btn.addEventListener("click", () => {
+            console.log("button was clicked 2");
+        });
+
+        const fun = () => {
+            console.log("button was clicked 3");
+        };
+        
+        btn.addEventListener("click", fun);
+
+        btn.addEventListener("click", () => {
+            console.log("button was clicked 4");
+        });
+
+        btn.removeEventListener("click",fun);
+        
+    </script>
+</body>
+
+</html>
