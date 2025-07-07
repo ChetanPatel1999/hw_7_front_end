@@ -1,0 +1,32 @@
+<script>
+    class student {
+        setStudent(name, rno, per) {
+            this.name = name;
+            this.rno = rno;
+            this.per = per;
+        }
+
+        generateResult() {
+            console.log("student result ....");
+            console.log("student name : ", this.name);
+            console.log("student rno : ", this.rno);
+            console.log("student per : ", this.per);
+            if (this.per > 33) {
+                console.log("student pass");
+            }
+            else {
+                console.log("student Fail");
+            }
+            console.log("---------------------------------");
+        }
+    }
+
+
+    let s1 = new student();
+    s1.setStudent("ram",101,20);
+    s1.generateResult();
+
+    let s2 = new student();
+    s2.setStudent("shyam",102,56);
+    s2.generateResult();
+</script>

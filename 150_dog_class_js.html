@@ -1,0 +1,25 @@
+<script>
+    class dog {
+        setDog(name, color, age) {
+            this.name = name;
+            this.color = color;
+            this.age = age;
+        }
+        getDog() {
+            console.log("dog info ...");
+            console.log("dog name : ", this.name);
+            console.log("dog color : ", this.color);
+            console.log("dog age : ", this.age);
+        }
+    }
+
+    let d1 = new dog();
+    d1.setDog("tommy", "brown", 12);
+    d1.getDog();
+
+
+    let d2 = new dog();
+    d2.setDog("wifi", "white", 6)
+    d2.getDog();
+
+</script>
