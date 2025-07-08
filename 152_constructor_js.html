@@ -1,0 +1,35 @@
+<!-- 
+ constructor in js 
+-->
+<!-- <script>
+    class demo {
+        constructor() {
+            console.log("constructor is called");
+        }
+    };
+
+    let d1 = new demo();
+    let d2 = new demo();
+</script> -->
+
+<script>
+    class person {
+        constructor(name, height, age = 10) {
+            this.name = name;
+            this.height = height;
+            this.age = age;
+        }
+        getPerson() {
+            console.log("person info : ");
+            console.log("person name : ", this.name);
+            console.log("person age : ", this.age);
+            console.log("person height : ", this.height);
+            console.log("------------------------------");
+        }
+    }
+    let p1 = new person("ram", 5.7);
+    p1.getPerson();
+
+    let p2 = new person("mohit", 5.3, 30);
+    p2.getPerson();
+</script>

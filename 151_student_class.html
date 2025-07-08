@@ -1,6 +1,6 @@
 <script>
     class student {
-        setStudent(name, rno, per) {
+        setStudent(name, rno, per=70) {
             this.name = name;
             this.rno = rno;
             this.per = per;
@@ -27,6 +27,6 @@
     s1.generateResult();
 
     let s2 = new student();
-    s2.setStudent("shyam",102,56);
+    s2.setStudent("shyam",102);
     s2.generateResult();
 </script>
