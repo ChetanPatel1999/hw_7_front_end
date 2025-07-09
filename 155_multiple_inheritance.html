@@ -1,0 +1,22 @@
+<script>
+    class animal {
+        eat() {
+            console.log("eating...");
+        }
+    }
+
+    class petanimal extends animal {
+        animal_type() {
+            console.log("this is petanimal");
+        }
+    }
+
+    class cow extends petanimal {
+        disp() {
+            console.log("cow is known as 'gou mata' ");
+        }
+    }
+
+    let c1 = new cow()
+
+</script>

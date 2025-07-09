@@ -1,0 +1,36 @@
+<script>
+    class student {
+        setsStudent(name, rno, per) {
+            this.name = name;
+            this.rno = rno;
+            this.per = per;
+        }
+        dispStudent() {
+            console.log("student info : ");
+            console.log("student name : ", this.name);
+            console.log("student rno : ", this.rno);
+            console.log("student per : ", this.per);
+        }
+    }
+
+    class bca extends student {
+        setYear(year) {
+            this.year = year;
+        }
+        disp_year() {
+            console.log("yaer : ", this.year);
+        }
+    }
+
+    class btech extends student {
+        set_branch(branch) {
+            this.branch = branch;
+        }
+        disp_branch() {
+            console.log("branch :  ", this.branch);
+        }
+    }
+
+    let s1 = new bca();
+    let s2 = new btech();
+</script>
