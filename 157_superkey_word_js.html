@@ -1,0 +1,30 @@
+<!--
+  super keyword :-  its used to invoked(called) base class constructor 
+  inside derived class and also used to call base class methods 
+  inside derived class. 
+  -->
+<script>
+    class student {
+        constructor(name, rno) {
+            this.name = name;
+            this.rno = rno;
+        }
+        display() {
+            console.log("student info : ")
+            console.log("student name : ", this.name)
+            console.log("student rno : ", this.rno)
+        }
+    }
+    class betch extends student {
+        constructor(name, rno, branch) {
+            super(name, rno);
+            this.branch = branch;
+        }
+        disp_betch() {
+            super.display();
+            console.log("branch : ", this.branch);
+        }
+    }
+    let s1 = new betch("ram", 101, "EC");
+    s1.disp_betch();
+</script>

@@ -1,0 +1,21 @@
+<!--
+//pollymorphism :- 
+method overriding :- if we have same method base class and 
+derived class so that concept is called method overriding. 
+-->
+<script>
+    class base {
+        disp() {
+            console.log("hello i am base class disp");
+        }
+    }
+    class derived extends base {
+        disp()// override method
+        {
+            console.log("hello i am derived class disp");
+        }
+    };
+
+    let d1 = new derived();
+    d1.disp();
+</script>
