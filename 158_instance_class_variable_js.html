@@ -1,0 +1,65 @@
+<script>
+    //example of instance / class variable
+    class student {
+        static coaching = "hello world institute"; // class variable
+        static total_pass = 0 // class variable
+        static total_fail = 0 // class variable
+        static total_count = 0 // class variable
+        constructor(name, rno, per) {
+            this.name = name;   // instance varible
+            this.rno = rno;     // instance varible
+            this.per = per;     // instance varible
+            student.total_count++;
+            if (this.per > 33) {
+                student.total_pass++;
+            }
+            else {
+                student.total_fail++;
+            }
+        }
+        display() {
+            console.log("student info : ")
+            console.log("student choching name :", student.coaching);
+            console.log("student name : ", this.name)
+            console.log("student rno : ", this.rno)
+            console.log("student per : ", this.per)
+            if (this.per > 33) {
+                console.log("student pass");
+            }
+            else {
+                console.log("student fail");
+            }
+        }
+        static total_result() {
+            console.log("total result ....")
+            console.log("total student : ", student.total_count);
+            console.log("total pass : ", student.total_pass);
+            console.log("total fail : ", student.total_fail);
+        }
+        // static average(o1, o2) {
+        //     let ave;
+        //     ave = (o1.per + o2.per) / 2;
+        //     console.log(`average of ${o1.name} and ${o2.name} = ${ave}`);
+        // }
+        average(o2) {
+            let ave;
+            ave = (this.per + o2.per) / 2;
+            console.log(`average of ${this.name} and ${o2.name} = ${ave}`);
+        }
+    }
+
+    let s1 = new student("ram", 101, 78);
+    let s2 = new student("shyam", 102, 14);
+    let s3 = new student("hariom", 103, 90);
+    let s4 = new student("mohit", 104, 75);
+    student.total_result();
+    s1.display();
+    s2.display();
+    s3.display();
+    s4.display();
+    // student.average(s1, s2);
+    // student.average(s3, s2);
+    s1.average(s2);
+    s2.average(s3);
+    s3.average(s4);
+</script>
