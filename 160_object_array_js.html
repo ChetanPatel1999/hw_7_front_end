@@ -1,0 +1,26 @@
+<script>
+    //object array in java script 
+    class emp {
+        constructor() {
+            this.id = Number(prompt("enter id : "));
+            this.sal = Number(prompt("enter sallary : "));
+        }
+        display_emp() {
+            console.log("emp info :")
+            console.log("emp id : ", this.id);
+            console.log("emp sal : ", this.sal);
+        }
+    }
+
+    let employs = [];
+    n = Number(prompt("enter number of emp : ")) // 3
+    let e;
+    for (let i = 0; i < n; i++) {
+        e = new emp();
+        employs.push(e);
+    }
+
+    for (let obj of employs) {
+        obj.display_emp();
+    }
+</script>

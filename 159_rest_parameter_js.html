@@ -1,0 +1,15 @@
+<script>
+    // method overloding is not suported by java script
+    // we use rest paramter in java script
+    function add(...a) {
+        let sum = 0;
+        for (let i of a) {
+            sum = sum + i;
+        }
+        console.log("sum = ", sum)
+    }
+    add(12, 6);  //18
+    add(4, 5, 8); //17
+    add(4, 12, 7, 15); //38
+    add(3.4, 7.9);//11.3
+</script>
