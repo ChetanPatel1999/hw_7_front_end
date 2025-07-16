@@ -1,0 +1,15 @@
+<!-- 
+  //     Callbacks
+  //     A callback is a function passed as an argument to another function.
+    
+-->
+<script>
+        function calculater(a, b, sumcallback) {
+            sumcallback(a, b);
+        }
+
+    calculater(12, 25, (a, b) => {
+        console.log("sum =", (a + b))
+    });
+
+</script>
