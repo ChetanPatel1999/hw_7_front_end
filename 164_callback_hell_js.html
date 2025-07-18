@@ -1,0 +1,26 @@
+<!-- // Callback Hell :  Nested callbacks stacked below one another forming a pyramid structure. 
+    // (Pyramid of Doom)
+    //  This style of programming becomes difficult to understand & manage.
+    //  we want to access some data from data base but sequence by squence. -->
+<script>
+    function getData(id, getNextData) {
+        setTimeout(() => {
+            console.log("data " + id);
+            if (getNextData) {
+                getNextData();
+            }
+        }, 4000)
+    }
+    console.log("data 1 is fatching ...")
+    getData(1, () => {
+        console.log("data 2 is fatching ...")
+        getData(2, () => {
+            console.log("data 3 is fatching ...")
+            getData(3, () => {
+                console.log("data 4 is fatching ...")
+                getData(4);
+            });
+        });
+    });
+
+</script>
