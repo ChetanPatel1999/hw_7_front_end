@@ -1,0 +1,42 @@
+<script>
+    function getData(id) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("data " + id);
+                resolve("data fatch successfully ");
+            }, 4000)
+        })
+    }
+
+
+    async function getmydata() {
+        console.log("data 1 is fatching ...")
+        await getData(1);
+        console.log("data 2 is fatching ...")
+        await getData(2);
+        console.log("data 3 is fatching ...")
+        await getData(3);
+        console.log("data 4 is fatching ...")
+        await getData(4);
+    }
+
+    getmydata();
+
+    // console.log("data 1 is fatching ...")
+    // getData(1)
+    //     .then((res) => {
+    //         console.log("data 2 is fatching ...")
+    //         return getData(2)
+    //     }).then((res) => {
+    //         console.log("data 3 is fatching ...")
+    //         return getData(3)
+    //     }).then((res) => {
+    //         console.log("data 4 is fatching ...")
+    //         return getData(4)
+    //     }).then((res) => {
+    //         console.log("data 5 is fatching ...")
+    //         return getData(5)
+    //     }).then((res) => {
+    //         console.log(res);
+    //     })
+</script>
