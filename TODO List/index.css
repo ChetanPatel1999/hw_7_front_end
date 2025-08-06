@@ -85,8 +85,25 @@ button {
 
 ul li.checked {
     text-decoration: line-through;
-    color:rgb(134, 128, 128);
+    color: rgb(134, 128, 128);
 }
-ul li.checked::before{
+
+ul li.checked::before {
     background-image: url(images/check-box.png);
+}
+
+.list-container li span {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-left: 12px;
+    padding-top: 6px;
+}
+
+.list-container li span:hover {
+    background-color: rgb(232, 229, 229);
 }
