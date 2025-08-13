@@ -46,9 +46,14 @@ body {
     transition: all 0.3s;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background-color: #222;
-    color: white;
+    color: #fff;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+    color: black;
 }
 
 #next-btn {
@@ -62,4 +67,12 @@ body {
     border-radius: 4px;
     margin: 15px auto 25px;
     display: block;
+}
+
+.correct-option {
+    background-color: rgb(106, 168, 106);
+}
+
+.incorrect-option {
+    background-color: rgb(199, 102, 102);
 }

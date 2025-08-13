@@ -45,12 +45,13 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz() {
-    resetButton();
+    nextBtn.innerHTML = "Next";
     currentQuestionIndex = 0;
     score = 0;
     showQuestion();
 }
 function showQuestion() {
+    resetButton();
     let questionData = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + questionData.question;
@@ -60,11 +61,53 @@ function showQuestion() {
         button.innerText = answer.text;
         button.classList.add("btn");
         buttonsElement.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", selectAns);
     })
 }
+function selectAns(evt) {
+    let ans = evt.target.dataset.correct;
+    if (ans) {
+        evt.target.classList.add("correct-option");
+        score++;
+    }
+    else {
+        evt.target.classList.add("incorrect-option");
+    }
+    Array.from(buttonsElement.children).forEach(button => {
+        if (button.dataset.correct) {
+            button.classList.add("correct-option");
+        }
+        button.disabled = true;
+    })
+    nextBtn.style.display = "block";
+}
 function resetButton() {
+    nextBtn.style.display = "none";
     while (buttonsElement.firstChild) {
         buttonsElement.firstChild.remove();
     }
 }
+function showQuizeScore() {
+    if (currentQuestionIndex < questions.length + 1) {
+        resetButton();
+        questionElement.innerHTML = `Quize score ${score} outof ${questions.length}`;
+        nextBtn.style.display = "block";
+        nextBtn.innerHTML = "Play Again";
+    }
+    else {
+        startQuiz();
+    }
+}
+nextBtn.addEventListener("click", () => {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    }
+    else {
+        showQuizeScore();
+    }
+})
 startQuiz();
