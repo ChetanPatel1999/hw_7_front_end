@@ -105,6 +105,52 @@ nav ul li a:hover::after {
     color: white;
     font-size: 45px;
 }
-.para{
-    text-align:justify;
+
+.para {
+    text-align: justify;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 30px 0px;
+}
+
+.tab-link {
+    margin-right: 60px;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.tab-link::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+}
+
+.tab-link.active-link::after {
+    width: 50%;
+}
+
+.tab-content ul li {
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.tab-content ul li span {
+    color: crimson;
+    font-size: 13px;
+    font-weight: 600;
+}
+.tab-content{
+    display: none;
+}
+
+.active-tab{
+    display: block;
 }
