@@ -236,16 +236,17 @@ nav ul li a:hover::after {
     height: 0%;
     position: absolute;
     left: 0px;
-    bottom: -150px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), red);
+    bottom:0px;
+    background: linear-gradient(rgba(0, 0, 0,0.6), red);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding:0px 40px;
     text-align: center;
     transition: all 0.5s;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .layer h3 {
@@ -268,7 +269,6 @@ nav ul li a:hover::after {
 
 .work:hover .layer {
     height: 100%;
-    bottom: 0px;
 }
 
 .work:hover img {
