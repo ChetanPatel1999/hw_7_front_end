@@ -236,13 +236,13 @@ nav ul li a:hover::after {
     height: 0%;
     position: absolute;
     left: 0px;
-    bottom:0px;
-    background: linear-gradient(rgba(0, 0, 0,0.6), red);
+    bottom: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), red);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:0px 40px;
+    padding: 0px 40px;
     text-align: center;
     transition: all 0.5s;
     border-radius: 10px;
@@ -327,16 +327,19 @@ nav ul li a:hover::after {
     color: red;
     transform: translateY(-10px);
 }
-.btn1{
+
+.btn1 {
     background-color: red;
     display: inline-block;
 }
 
 .contact-right form {
- width: 100%;
- /* border: 1px solid red; */
+    width: 100%;
+    /* border: 1px solid red; */
 }
-form input,textarea {
+
+form input,
+textarea {
     width: 100%;
     margin: 15px 0px;
     padding: 15px 0px;
@@ -349,16 +352,28 @@ form input,textarea {
     font-size: 15px;
     resize: none;
 }
-.btn2{
+
+.btn2 {
     font-size: 18px;
     padding: 14px 60px;
 }
-.copyright{
+
+.copyright {
     text-align: center;
     background-color: #262626;
     padding: 20px;
     font-weight: 600;
 }
-.copyright p i{
+
+.copyright p i {
     color: red;
+}
+
+.msg {
+    color: green;
+    margin-top: -10px;
+}
+
+.btn2:active {
+    background-color: green;
 }
