@@ -36,7 +36,6 @@ nav {
 nav img {
     width: 140px;
 }
-
 nav ul li {
     list-style: none;
     display: inline-block;
@@ -376,4 +375,96 @@ textarea {
 
 .btn2:active {
     background-color: green;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+
+    #header {
+        background-image: url(images/phonlogo.png);
+    }
+
+    body {
+        background-color: #000;
+    }
+
+    nav img {
+        width: 120px;
+    }
+
+
+    nav ul {
+        background-color: red;
+        height: 100vh;
+        width: 0px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        padding-top: 50px;
+        transition: width 0.5s;
+        z-index: 2;
+    }
+
+    nav .fa-solid {
+        font-size: 25px;
+        display: block;
+    }
+
+    .fa-xmark {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px;
+    }
+
+    .header-text {
+        font-size: 20px;
+        margin-top: 90%;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .about-colm-1 {
+        flex-basis: 100%;
+    }
+
+    .about-colm-2 {
+        flex-basis: 100%;
+    }
+
+    .tab-link {
+        margin-right: 20px;
+    }
+
+    .about-colm-2 p {
+        font-size: 18px;
+    }
+
+    .contact-left {
+        /* border: 1px solid red; */
+        flex-basis: 100%;
+    }
+
+    .contact-right {
+        /* border: 1px solid red; */
+        flex-basis: 100%;
+    }
+
+    .contact-right .btn2 {
+        display: block;
+    }
+
+    .copyright p {
+        font-size: 12px;
+    }
 }

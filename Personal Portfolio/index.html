@@ -16,12 +16,14 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png">
-                <ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <ul id="menu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
             </nav>
             <div class="header-text">
@@ -216,7 +218,7 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerText = "message sent successfully";
-                    
+
                     setTimeout(() => {
                         msg.innerText = "";
                     }, 3000)
@@ -224,6 +226,16 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+
+    <script>
+        let menu = document.querySelector("#menu");
+        function openmenu() {
+            menu.style.width = "150px";
+        }
+        function closemenu() {
+            menu.style.width = "0px";
+        }
     </script>
 </body>
 
