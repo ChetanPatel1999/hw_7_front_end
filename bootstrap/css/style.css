@@ -1,14 +1,4 @@
-.container {
-    border: none;
-}
-
-.row {
-    border: none;
-}
-
-.col {
-    border: none;
-}
-div{
+div {
     border: 1px solid black;
+    width: 800px;
 }
