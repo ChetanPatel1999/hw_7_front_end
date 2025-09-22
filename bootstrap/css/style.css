@@ -1,4 +1,8 @@
-div {
-    border: 1px solid black;
-    width: 800px;
+body {
+    height: 100vh;
+}
+
+img {
+    width: 200px;
+    height: 200px;
 }

@@ -1,0 +1,9 @@
+@media only screen and (min-width:255px) and (max-width:575px) {
+    .button-div {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background-color: white;
+        padding: 10px !important;
+    }
+}

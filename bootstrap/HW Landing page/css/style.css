@@ -1,0 +1,12 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.img-fluid {
+    width: 80px;
+}
+
+.Callbtn {
+    background: linear-gradient(to right, #0acefe, #2699fb);
+    color: white;
+}
