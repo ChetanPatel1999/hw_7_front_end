@@ -10,3 +10,39 @@
     background: linear-gradient(to right, #0acefe, #2699fb);
     color: white;
 }
+
+.banner-content h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.banner-content h1 span {
+    color: #2699fb;
+}
+
+.banner-content p {
+    font-size: 20px;
+}
+
+.banner-content ul li {
+    list-style: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.banner-content ul li i {
+    color: #2699fb;
+}
+
+.demo-btn {
+    background: linear-gradient(to right, #0acefe, #2699fb);
+    color: white;
+}
+
+.banner-form h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.banner-form p {
+    font-size: 16px;
+}

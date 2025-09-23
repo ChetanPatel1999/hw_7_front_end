@@ -6,4 +6,22 @@
         background-color: white;
         padding: 10px !important;
     }
+
+    .img-fluid {
+        width: 120px;
+    }
+
+    .banner-content h1 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .banner-content p {
+        font-size: 18px;
+    }
+
+    .banner-content ul li {
+        font-size: 17px;
+    }
+
 }
