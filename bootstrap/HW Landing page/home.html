@@ -18,6 +18,68 @@
 </head>
 
 <body>
+    <div class="modal fade" id="enquryform">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Enquiry Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="p-2 banner-form rounded-3">
+                        <h2>Book your Free Class Now!</h2>
+                        <p>2 days of free demo classes without paying in advance!</p>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">+91</span>
+                                <input type="text" class="form-control" placeholder="Phone" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <button class="w-100 btn demo-btn">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Demoform">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Demo Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="p-2 banner-form rounded-3">
+                        <h2>Book your Free Class Now!</h2>
+                        <p>2 days of free demo classes without paying in advance!</p>
+                        <div class="mb-3">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Phone</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">+91</span>
+                                <input type="text" class="form-control" placeholder="Phone" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <button class="w-100 btn demo-btn">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-------------------------- header section ------------------------------>
     <header class="container-fluid shadow-lg position-sticky top-0 bg-white">
         <div class="container ">
@@ -49,9 +111,11 @@
                             <li><i class="fa-solid fa-circle-check"></i>50 seats only</li>
                         </ul>
                         <div class="d-flex flex-lg-row flex-column gap-3 mt-4">
-                            <button class="w-100  btn demo-btn">Book 2 Days Demo</button>
-                            <button class="w-100 btn border border-secondary"> <i
-                                    class="fa-solid fa-download"></i>Download Curriculum</button>
+                            <button class="w-100  btn demo-btn" data-bs-toggle="modal" data-bs-target="#Demoform">Book
+                                2 Days Demo</button>
+                            <button class="w-100 btn border border-secondary" data-bs-toggle="modal"
+                                data-bs-target="#enquryform"> <i class="fa-solid fa-download"></i>Download
+                                Curriculum</button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +144,115 @@
                 </div>
             </div>
         </div>
+        <!----------------------counter section---------------------------->
+        <div class="container mt-5">
+            <div class="row row-cols-2 row-cols-lg-5 shadow-lg p-4 rounded-3 counter-section">
+                <div class="col text-center">
+                    <h2>1000+</h2>
+                    <p>Students Trained</p>
+                </div>
+                <div class="col text-center">
+                    <h2>₹ 6 LPA</h2>
+                    <p>Min salary</p>
+                </div>
+                <div class="col text-center">
+                    <h2>320+</h2>
+                    <p>Recruiting Partners</p>
+                </div>
+                <div class="col text-center">
+                    <h2>10:00 am </h2>
+                    <p>Program Timing</p>
+                </div>
+                <div class="col text-center">
+                    <h2>11th May</h2>
+                    <p>Next batch start</p>
+                </div>
+            </div>
+        </div>
     </section>
+    <!------------------------key heighlights-------------------------------------->
+    <section class="container-fluid key-heighlight  py-5">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-12">
+                    <h1>Key Highlights of the Course</h1>
+                    <p>Key Highlights of the IT Course: Practical projects, modern tools, career-focused training, and
+                        strong industry-ready skills.</p>
+                </div>
+            </div>
+            <div class="row py-2 row-cols-1 row-cols-lg-3 gy-3">
+                <div class="col">
+                    <div class="key-heighlight-item d-flex shadow-lg rounded-3 p-2 gap-3">
+                        <div class="bg-primary-subtle p-4 rounded-3">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div>
+                            <h3>Assignments &<br>Modules tests</h3>
+                            <p>Test Your knowledge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="key-heighlight-item d-flex shadow-lg rounded-3 p-2 gap-3">
+                        <div class="bg-primary-subtle p-4 rounded-3">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div>
+                            <h3>Assignments &<br>Modules tests</h3>
+                            <p>Test Your knowledge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="key-heighlight-item d-flex shadow-lg rounded-3 p-2 gap-3">
+                        <div class="bg-primary-subtle p-4 rounded-3">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div>
+                            <h3>Assignments &<br>Modules tests</h3>
+                            <p>Test Your knowledge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="key-heighlight-item d-flex shadow-lg rounded-3 p-2 gap-3">
+                        <div class="bg-primary-subtle p-4 rounded-3">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div>
+                            <h3>Assignments &<br>Modules tests</h3>
+                            <p>Test Your knowledge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="key-heighlight-item d-flex shadow-lg rounded-3 p-2 gap-3">
+                        <div class="bg-primary-subtle p-4 rounded-3">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div>
+                            <h3>Assignments &<br>Modules tests</h3>
+                            <p>Test Your knowledge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="key-heighlight-item d-flex shadow-lg rounded-3 p-2 gap-3">
+                        <div class="bg-primary-subtle p-4 rounded-3">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                        </div>
+                        <div>
+                            <h3>Assignments &<br>Modules tests</h3>
+                            <p>Test Your knowledge</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </body>
 
