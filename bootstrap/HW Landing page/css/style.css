@@ -80,3 +80,10 @@
 .key-heighlight-item p {
     font-size: 12px;
 }
+
+.key-heighlight-item i {
+    color: #2699fb;
+}
+.card-img-top{
+    height: 150px;
+}
