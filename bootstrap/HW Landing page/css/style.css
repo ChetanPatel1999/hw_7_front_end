@@ -84,6 +84,29 @@
 .key-heighlight-item i {
     color: #2699fb;
 }
-.card-img-top{
+
+.card-img-top {
     height: 150px;
+}
+
+.my-tab-content ul li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.my-tab-content ul li i {
+    color: #2699fb;
+    padding-right: 25px;
+}
+
+.my-tab-content h2 {
+    color: #2699fb;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #f2f4f7;
+    color: black;
+    border-bottom: 2px solid #2699fb;
+    border-radius: 0px;
 }
