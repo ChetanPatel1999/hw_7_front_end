@@ -110,3 +110,19 @@
     border-bottom: 2px solid #2699fb;
     border-radius: 0px;
 }
+
+.student-review img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.student-review .para {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.box {
+    background: linear-gradient(to right, #0acefe, #2699fb);
+    color: white;
+}
