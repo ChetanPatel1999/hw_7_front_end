@@ -183,35 +183,92 @@
 
 
 //jQuery Effects - Animation
+// $(document).ready(function () {
+
+//     $(".btn").click(function (e) {
+
+//         // $(".box").animate({ left: '250px' }, 2000, () => {
+//         //     $(".box").animate({ left: '0px' }, 2000)
+//         // });
+
+//         //Manipulate Multiple Properties
+//         // $(".box").animate({ left: '250px', width: '300px', opacity: '0.5' }, 2000, () => {
+//         //     $(".box").animate({ left: '0px', width: '150px' }, 2000)
+//         // });
+
+
+//         // Uses Queue Functionality
+//         // $(".box").animate({ left: "300px", }, 1000);
+
+//         // $(".box").animate({ width: "300px" }, 1000);
+
+//         // $(".box").animate({ height: "300px" }, 1000);
+//         // $(".box").animate({ width: "150px" }, 1000);
+//         // $(".box").animate({ height: "150px" }, 1000);
+//         // $(".box").animate({ left: "0px", }, 1000);
+
+
+
+//         $(".box").animate({ left: "300px"}, 2000);
+//         $(".box").animate({ fontSize: "50px"}, 2000);
+
+
+//     });
+// });
+
+
+// //jQuery Stop Animations
+// $(document).ready(function () {
+
+//     $(".btn").click(function (e) {
+//         $(".box").animate({ width: 300 }, 5000);
+//         $(".box").animate({ height: 300 }, 5000, () => {
+//             console.log("animation complete");
+//         });
+
+//     });
+
+//     // $("#stop").click(function (e) {
+//     //     $(".box").stop();
+//     // });
+// })
+
+
+// //jQuery - Chaining
+// $(document).ready(function () {
+//     $(".btn").click(function (e) {
+
+//         $(".box").css("background-color", "blue").slideUp(2000).slideDown(2000).hide(4000);
+
+//     });
+// });
+
+
+// Get Content and Attributes
+//Set Content and attributes
+
 $(document).ready(function () {
 
+    // console.log($("#para").text())
+    // console.log($(".box").text())
+    // console.log($("h1").text())
+    // console.log($(".box").html())
+
+    // console.log($("textarea").val())
+    // console.log($("h1").attr("class"))
+    // console.log($("img").attr("src"))
+    // console.log($("img").attr("title"))  
+
     $(".btn").click(function (e) {
-
-        // $(".box").animate({ left: '250px' }, 2000, () => {
-        //     $(".box").animate({ left: '0px' }, 2000)
-        // });
-
-        //Manipulate Multiple Properties
-        // $(".box").animate({ left: '250px', width: '300px', opacity: '0.5' }, 2000, () => {
-        //     $(".box").animate({ left: '0px', width: '150px' }, 2000)
-        // });
-
-
-        // Uses Queue Functionality
-        // $(".box").animate({ left: "300px", }, 1000);
-
-        // $(".box").animate({ width: "300px" }, 1000);
-
-        // $(".box").animate({ height: "300px" }, 1000);
-        // $(".box").animate({ width: "150px" }, 1000);
-        // $(".box").animate({ height: "150px" }, 1000);
-        // $(".box").animate({ left: "0px", }, 1000);
-
-
-
-        $(".box").animate({ left: "300px"}, 2000);
-        $(".box").animate({ fontSize: "50px"}, 2000);
-
-
+        // $("#para").text("<b>hello raj sharma<b>");
+        // $("#para").html("<b>hello raj sharma<b>");
+        // $("input").val("welcome");
+        // $("img").attr("title", "monky");
+        // $(".box").attr("class", "box1");
+        $("#para").text((i, orgtext) => {
+            return "old text " + orgtext + " hello raj sharma"
+        })
+    
     });
+
 });

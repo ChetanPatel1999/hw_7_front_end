@@ -1,6 +1,17 @@
 .box {
     height: 150px;
-    width: 300px;
+    width: 150px;
     background-color: red;
     position: relative;
+}
+.box1 {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    position: relative;
+}
+img{
+    border: 2px solid red;
+    width: 100px;
+    height: 100px;
 }
