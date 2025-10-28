@@ -247,28 +247,65 @@
 // Get Content and Attributes
 //Set Content and attributes
 
+// $(document).ready(function () {
+
+//     // console.log($("#para").text())
+//     // console.log($(".box").text())
+//     // console.log($("h1").text())
+//     // console.log($(".box").html())
+
+//     // console.log($("textarea").val())
+//     // console.log($("h1").attr("class"))
+//     // console.log($("img").attr("src"))
+//     // console.log($("img").attr("title"))  
+
+//     $(".btn").click(function (e) {
+//         // $("#para").text("<b>hello raj sharma<b>");
+//         // $("#para").html("<b>hello raj sharma<b>");
+//         // $("input").val("welcome");
+//         // $("img").attr("title", "monky");
+//         // $(".box").attr("class", "box1");
+//         $("#para").text((i, orgtext) => {
+//             return "old text " + orgtext + " hello raj sharma"
+//         })
+
+//     });
+
+// });
+
+
+
+//Add New HTML Content
+// append() - Inserts content at the end of the selected elements
+// prepend() - Inserts content at the beginning of the selected elements
+// after() - Inserts content after the selected elements
+// before() - Inserts content before the selected elements
+
+// jQuery - Remove Elements
+
 $(document).ready(function () {
 
-    // console.log($("#para").text())
-    // console.log($(".box").text())
-    // console.log($("h1").text())
-    // console.log($(".box").html())
+    $(".btn").click(function () {
+        // $(".box").prepend("ram is good boy");
 
-    // console.log($("textarea").val())
-    // console.log($("h1").attr("class"))
-    // console.log($("img").attr("src"))
-    // console.log($("img").attr("title"))  
+        // let text="<button>get details</button>"
 
-    $(".btn").click(function (e) {
-        // $("#para").text("<b>hello raj sharma<b>");
-        // $("#para").html("<b>hello raj sharma<b>");
-        // $("input").val("welcome");
-        // $("img").attr("title", "monky");
-        // $(".box").attr("class", "box1");
-        $("#para").text((i, orgtext) => {
-            return "old text " + orgtext + " hello raj sharma"
-        })
-    
+        // let text=document.createElement("button");
+        // text.innerText="click me!"
+
+        // let text = $("<button></button>").text("click me !")
+
+        // $(".box").after(text);
+
+
+        // var txt1 = "<p>Text1</p>";               // Create element with HTML 
+        // var txt2 = $("<h1></h1>").text("Text2");   // Create with jQuery
+        // var txt3 = document.createElement("button");  // Create with DOM
+        // txt3.innerText = "Text3";
+        // $(".box").append(txt1, txt2, txt3);      // Append the new elements
+
+        // $(".box").remove();
+        // $(".box").empty();
+        $("p").remove("#para");
     });
-
 });
