@@ -1,17 +1,31 @@
 .box {
+    margin: 20px;
     height: 150px;
-    width: 150px;
+    width: 200px;
+    padding: 10px;
+    border: 5px solid blue;
     background-color: red;
     position: relative;
 }
+
 .box1 {
     height: 300px;
     width: 300px;
     background-color: blue;
     position: relative;
 }
-img{
+
+img {
     border: 2px solid red;
     width: 100px;
     height: 100px;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.font {
+    font-size: 20px;
 }

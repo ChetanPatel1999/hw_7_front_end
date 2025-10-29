@@ -283,29 +283,85 @@
 
 // jQuery - Remove Elements
 
+// $(document).ready(function () {
+
+//     $(".btn").click(function () {
+//         // $(".box").prepend("ram is good boy");
+
+//         // let text="<button>get details</button>"
+
+//         // let text=document.createElement("button");
+//         // text.innerText="click me!"
+
+//         // let text = $("<button></button>").text("click me !")
+
+//         // $(".box").after(text);
+
+
+//         // var txt1 = "<p>Text1</p>";               // Create element with HTML 
+//         // var txt2 = $("<h1></h1>").text("Text2");   // Create with jQuery
+//         // var txt3 = document.createElement("button");  // Create with DOM
+//         // txt3.innerText = "Text3";
+//         // $(".box").append(txt1, txt2, txt3);      // Append the new elements
+
+//         // $(".box").remove();
+//         // $(".box").empty();
+//         $("p").remove("#para");
+//     });
+// });
+
+
+//jQuery - Get and Set CSS Classes
+// addClass() - Adds one or more classes to the selected elements
+// removeClass() - Removes one or more classes from the selected elements
+// toggleClass() - Toggles between adding/removing classes from the selected elements
+
+// $(document).ready(function () {
+//     $(".btn").click(function () {
+//         // $(".my-class").addClass("blue font");
+//         // $("p.my-class").removeClass("blue font");
+//         $("p.my-class").toggleClass("blue font");
+
+//     });
+// });
+
+
+//jQuery - css() Method
+// $(document).ready(function () {
+//     $(".btn").click(function () {
+//         // css = $("p.my-class").css("font-size");
+//         // console.log(css);
+
+//         // $("p.my-class").css("font-size","40px");
+//         // $("p.my-class").css("background-color","red");
+
+
+//         $("p.my-class").css({ "background-color": "red", "border": "2px solid blue", "font-size": "40px" });
+
+//     });
+// });
+
+
+// jQuery Dimension Methods
+// jQuery has several important methods for working with dimensions:
+
+// width()
+// height()
+// innerWidth()
+// innerHeight()
+// outerWidth()
+// outerHeight()
+
 $(document).ready(function () {
-
     $(".btn").click(function () {
-        // $(".box").prepend("ram is good boy");
-
-        // let text="<button>get details</button>"
-
-        // let text=document.createElement("button");
-        // text.innerText="click me!"
-
-        // let text = $("<button></button>").text("click me !")
-
-        // $(".box").after(text);
-
-
-        // var txt1 = "<p>Text1</p>";               // Create element with HTML 
-        // var txt2 = $("<h1></h1>").text("Text2");   // Create with jQuery
-        // var txt3 = document.createElement("button");  // Create with DOM
-        // txt3.innerText = "Text3";
-        // $(".box").append(txt1, txt2, txt3);      // Append the new elements
-
-        // $(".box").remove();
-        // $(".box").empty();
-        $("p").remove("#para");
+        // ans = $(".box").width();
+        // ans = $(".box").height();
+        // ans = $(".box").innerHeight();
+        // ans = $(".box").innerWidth();
+        // ans = $(".box").outerWidth();
+        // ans = $(".box").outerHeight();
+        // ans = $(".box").outerHeight(true);
+        ans = $(".box").outerWidth(true);
+        console.log(ans);
     });
 });
