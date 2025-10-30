@@ -257,7 +257,7 @@
 //     // console.log($("textarea").val())
 //     // console.log($("h1").attr("class"))
 //     // console.log($("img").attr("src"))
-//     // console.log($("img").attr("title"))  
+//     // console.log($("img").attr("title"))
 
 //     $(".btn").click(function (e) {
 //         // $("#para").text("<b>hello raj sharma<b>");
@@ -298,7 +298,7 @@
 //         // $(".box").after(text);
 
 
-//         // var txt1 = "<p>Text1</p>";               // Create element with HTML 
+//         // var txt1 = "<p>Text1</p>";               // Create element with HTML
 //         // var txt2 = $("<h1></h1>").text("Text2");   // Create with jQuery
 //         // var txt3 = document.createElement("button");  // Create with DOM
 //         // txt3.innerText = "Text3";
@@ -352,16 +352,58 @@
 // outerWidth()
 // outerHeight()
 
+// $(document).ready(function () {
+//     $(".btn").click(function () {
+//         // ans = $(".box").width();
+//         // ans = $(".box").height();
+//         // ans = $(".box").innerHeight();
+//         // ans = $(".box").innerWidth();
+//         // ans = $(".box").outerWidth();
+//         // ans = $(".box").outerHeight();
+//         // ans = $(".box").outerHeight(true);
+//         ans = $(".box").outerWidth(true);
+//         console.log(ans);
+//     });
+// });
+
+
+
+//jQuery Traversing - Ancestors
+// parent()
+// parents()
+// parentsUntil()
+
+// jQuery Traversing - Descendants
+// children()
+// find()
+
+//jQuery Traversing - Siblings
+// siblings()
+// next()
+// nextAll()
+// nextUntil()
+// prev()
+// prevAll()
+// prevUntil()
 $(document).ready(function () {
-    $(".btn").click(function () {
-        // ans = $(".box").width();
-        // ans = $(".box").height();
-        // ans = $(".box").innerHeight();
-        // ans = $(".box").innerWidth();
-        // ans = $(".box").outerWidth();
-        // ans = $(".box").outerHeight();
-        // ans = $(".box").outerHeight(true);
-        ans = $(".box").outerWidth(true);
-        console.log(ans);
+    $("button").click(function () {
+
+        // $("span").parent().css("border", "4px solid blue");
+        // $("span").parents().css("border", "4px solid blue");
+        //  $("span").parents("ul").css("border", "4px solid blue");
+        //  $("li").parentsUntil("body").css("border", "4px solid blue");
+
+        // $("ul").children().css("border", "4px solid blue")
+
+        // $("div").find("span").css("border", "4px solid blue")
+
+        // $("div").find("*").css("border", "4px solid blue")
+
+        // $("h1").siblings().css("border", "4px solid blue")
+        // $("h1").nextUntil("p").css("border", "4px solid blue")
+        // $("h1").prevAll().css("border", "4px solid blue")
+
+        $("p").eq(2).css("background-color","black")
+
     });
 });
