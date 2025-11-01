@@ -385,25 +385,69 @@
 // prev()
 // prevAll()
 // prevUntil()
+// $(document).ready(function () {
+//     $("button").click(function () {
+
+//         // $("span").parent().css("border", "4px solid blue");
+//         // $("span").parents().css("border", "4px solid blue");
+//         //  $("span").parents("ul").css("border", "4px solid blue");
+//         //  $("li").parentsUntil("body").css("border", "4px solid blue");
+
+//         // $("ul").children().css("border", "4px solid blue")
+
+//         // $("div").find("span").css("border", "4px solid blue")
+
+//         // $("div").find("*").css("border", "4px solid blue")
+
+//         // $("h1").siblings().css("border", "4px solid blue")
+//         // $("h1").nextUntil("p").css("border", "4px solid blue")
+//         // $("h1").prevAll().css("border", "4px solid blue")
+
+//         $("p").eq(2).css("background-color","black")
+
+//     });
+// });
+
+
+// jQuery - AJAX load() Method
 $(document).ready(function () {
-    $("button").click(function () {
+    $(".btn").click(function () {
+        $(".my-div").css("border", "2px solid blue");
+        // $(".my-div").load("hello.txt");
+        // $(".my-div").load("hello.txt #p1");
 
-        // $("span").parent().css("border", "4px solid blue");
-        // $("span").parents().css("border", "4px solid blue");
-        //  $("span").parents("ul").css("border", "4px solid blue");
-        //  $("li").parentsUntil("body").css("border", "4px solid blue");
+        // $(".my-div").load("hello.txt", function (responseTxt, statusTxt, xhr) {
+        //     if (statusTxt == "success")
+        //         console.log(responseTxt);   
+        //     alert("External content loaded successfully!");
+        //     if (statusTxt == "error")
+        //         alert("Error: " + xhr.status + ": " + xhr.statusText);
+        // });
 
-        // $("ul").children().css("border", "4px solid blue")
 
-        // $("div").find("span").css("border", "4px solid blue")
+        // $.get("hello.txt", function (data, status) {
+        //     $(".my-div").html(data);
+        //     console.log(status)
+        // })
 
-        // $("div").find("*").css("border", "4px solid blue")
 
-        // $("h1").siblings().css("border", "4px solid blue")
-        // $("h1").nextUntil("p").css("border", "4px solid blue")
-        // $("h1").prevAll().css("border", "4px solid blue")
+        // $.get("https://dog.ceo/api/breeds/image/random", function (data, status) {
 
-        $("p").eq(2).css("background-color","black")
+        //     console.log(data);
+        //     let res = $("<img></img>").attr("src", data.message)
+        //     $(".my-div").append(res);
+
+        // })
+
+        $.get("https://randomuser.me/api/", function (data, status) {
+
+            console.log(data.results[0].picture.large);
+            let res = $("<img></img>").attr("src", data.results[0].picture.large).width(200).height(200)
+            $(".my-div").append(res);
+
+        })
 
     });
+
+
 });
