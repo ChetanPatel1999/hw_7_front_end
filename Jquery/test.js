@@ -409,45 +409,102 @@
 // });
 
 
-// jQuery - AJAX load() Method
+// // jQuery - AJAX load() Method
+// $(document).ready(function () {
+//     $(".btn").click(function () {
+//         $(".my-div").css("border", "2px solid blue");
+//         // $(".my-div").load("hello.txt");
+//         // $(".my-div").load("hello.txt #p1");
+
+//         // $(".my-div").load("hello.txt", function (responseTxt, statusTxt, xhr) {
+//         //     if (statusTxt == "success")
+//         //         console.log(responseTxt);
+//         //     alert("External content loaded successfully!");
+//         //     if (statusTxt == "error")
+//         //         alert("Error: " + xhr.status + ": " + xhr.statusText);
+//         // });
+
+
+//         // $.get("hello.txt", function (data, status) {
+//         //     $(".my-div").html(data);
+//         //     console.log(status)
+//         // })
+
+
+//         // $.get("https://dog.ceo/api/breeds/image/random", function (data, status) {
+
+//         //     console.log(data);
+//         //     let res = $("<img></img>").attr("src", data.message)
+//         //     $(".my-div").append(res);
+
+//         // })
+
+//         $.get("https://randomuser.me/api/", function (data, status) {
+
+//             console.log(data.results[0].picture.large);
+//             let res = $("<img></img>").attr("src", data.results[0].picture.large).width(200).height(200)
+//             $(".my-div").append(res);
+
+//         })
+
+//     });
+
+
+// });
+
+
+//jquery nonConflict() method
+// $.noConflict();
+// jQuery(document).ready(function () {
+//     jQuery("button").click(function () {
+//         jQuery("p").text("jQuery is still working!");
+//     });
+// });
+
+
+// let jq = $.noConflict();
+// jq(document).ready(function () {
+//     jq("button").click(function () {
+//         jq("p").text("jQuery is still working!");
+//     });
+// });
+
+// $.noConflict();
+// jQuery(document).ready(function ($) {
+//     $("button").click(function () {
+//         $("p").text("jQuery is still working!");
+//     });
+// });
+
+
+//jQuery - Filters
+
+// $(document).ready(function () {
+
+//     $("#myInput").on("keyup", function () {
+
+//         var value = $(this).val().toLowerCase();
+
+//         $("#myTable tr").filter(function () {
+//             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//         });
+
+//     });
+
+// });
+
+
+
 $(document).ready(function () {
-    $(".btn").click(function () {
-        $(".my-div").css("border", "2px solid blue");
-        // $(".my-div").load("hello.txt");
-        // $(".my-div").load("hello.txt #p1");
 
-        // $(".my-div").load("hello.txt", function (responseTxt, statusTxt, xhr) {
-        //     if (statusTxt == "success")
-        //         console.log(responseTxt);   
-        //     alert("External content loaded successfully!");
-        //     if (statusTxt == "error")
-        //         alert("Error: " + xhr.status + ": " + xhr.statusText);
-        // });
+    $("#myInput").on("keyup", function () {
 
+        var value = $(this).val().toLowerCase();
 
-        // $.get("hello.txt", function (data, status) {
-        //     $(".my-div").html(data);
-        //     console.log(status)
-        // })
-
-
-        // $.get("https://dog.ceo/api/breeds/image/random", function (data, status) {
-
-        //     console.log(data);
-        //     let res = $("<img></img>").attr("src", data.message)
-        //     $(".my-div").append(res);
-
-        // })
-
-        $.get("https://randomuser.me/api/", function (data, status) {
-
-            console.log(data.results[0].picture.large);
-            let res = $("<img></img>").attr("src", data.results[0].picture.large).width(200).height(200)
-            $(".my-div").append(res);
-
-        })
+        $("ul li").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
 
     });
-
 
 });
